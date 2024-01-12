@@ -25,7 +25,7 @@
           </clipPath>
         </defs>
       </svg>
-      <strong>Cat</strong> Energy
+      <p class="header__logo-text"><b>Cat</b> Energy</p>
     </a>
     <nav class="header__nav main-menu">
       <button class="main-menu-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -48,20 +48,28 @@
       <fieldset class="feedback">
         <legend class="feedback__title">Подбор программы</legend>
         <p class="feedback__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <label class="feedback__box">
-          <span class="feedback__text">ИМЯ:<sup>*</sup></span>
-          <input class="feedback__field" type="text" value="БАРСИК" required>
-        </label>
-        <label class="feedback__box">
-          <span class="feedback__text">Вес (кг):<sup>*</sup></span>
-          <input class="feedback__field" type="number" step="0.1" value="7">
-        </label>
-        <label class="feedback__box">
-          <span class="feedback__text">Возраст (лет):</span>
-          <input class="feedback__field" type="number" value="7" step="0.1" required>
-        </label>
+        <ul class="feedback__list">
+          <li class="feedback__item">
+            <label class="feedback__box">
+              <span class="feedback__text">ИМЯ:<sup>*</sup></span>
+              <input class="feedback__field" type="text" value="БАРСИК" required>
+            </label>
+          </li>
+          <li class="feedback__item">
+            <label class="feedback__box">
+              <span class="feedback__text">Вес (кг):<sup>*</sup></span>
+              <input class="feedback__field" type="number" step="0.1" value="7">
+            </label>
+          </li>
+          <li class="feedback__item">
+            <label class="feedback__box">
+              <span class="feedback__text">Возраст (лет):</span>
+              <input class="feedback__field" type="number" value="7" step="1" required>
+            </label>
+          </li>
+        </ul>
       </fieldset>
-      <fieldset class="rations">
+      <fieldset class="form-feedback rations">
         <legend class="visually-hidden">Вид питания</legend>
         <ul class="rations__list">
           <li class="rations__item">
@@ -89,18 +97,24 @@
       </fieldset>
       <fieldset class="feedback">
         <legend class="feedback__title">Контактные данные (владельца кота)</legend>
-        <label class="feedback__box">
-          <span class="feedback__text">e-mail:<sup>*</sup> </span>
-          <input class="feedback__field" type="email" value="kuklachev@gmail.com" required>
-        </label>
-        <label class="feedback__box">
-          <span class="feedback__text">Телефон:<sup>*</sup></span>
-          <input class="feedback__field" type="tel" value="8 (960) 900-60-90" required>
-        </label>
+        <ul class="feedback__list">
+          <li class="feedback__item">
+            <label class="feedback__box">
+              <span class="feedback__text">e-mail:<sup>*</sup> </span>
+              <input class="feedback__field" type="email" value="kuklachev@gmail.com" required>
+            </label>
+          </li>
+          <li class="feedback__item">
+            <label class="feedback__box">
+              <span class="feedback__text">Телефон:<sup>*</sup></span>
+              <input class="feedback__field" type="tel" value="8 (960) 900-60-90" required>
+            </label>
+          </li>
+        </ul>
       </fieldset>
-      <fieldset class="feedback comment">
-        <legend class="comment__title">Комментарий</legend>
-        <textarea class="comment__area" placeholder="Расскажите обо всех повадках кота"></textarea>
+      <fieldset class="feedback">
+        <legend class="feedback__title">Комментарий</legend>
+        <textarea class="feedback__area" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="feedback">
         <legend class="feedback__title">Дополнительно</legend>
@@ -135,19 +149,19 @@
           </li>
         </ul>
       </fieldset>
-      <button class="button">Отправить заявку</button>
-      <p class="note"><sup>*</sup> - Обязательные поля</p>
+      <button class="form-feedback__button">Отправить заявку</button>
+      <p class="form-feedback__note"><sup>*</sup> - Обязательные поля</p>
     </form>
   </main>
   <footer class="footer">
-    <section class="road-map">
+    <section class="footer__road-map road-map">
       <h2 class="visually-hidden">Наш адресс</h2>
       <p class="road-map__baner">Приглашаем к сотрудничеству дилеров!</p>
       <address class="road-map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       <img class="road-map__img" src="./img/#" alt="Карта проезда">
     </section>
     <p class="footer__title"><b>Cat</b> Energy</p>
-    <nav class="footer__nav social">
+    <nav class="footer__nav">
       <ul class="footer__list">
         <li class="footer__item">
           <a class="footer__link" href="#">
