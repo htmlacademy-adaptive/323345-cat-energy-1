@@ -1,0 +1,27 @@
+// сюда заносим переменные, используемые в стиляx
+
+// Colors
+
+$color-font:        #444444;
+$color-font-title:  #000000;
+
+$color-bg-basic:    #ffffff;
+$color-bg-second:   #68b738;
+$olor-bg-three:     #f2f2f2;
+
+// Typography
+
+$ff-default:         "Lato", sans-serif;
+$ff-title:           "Oswald", sans-serif;
+$ff-button:          "Oswald", sans-serif;
+
+$fz-default:         14px;
+$lh-default:         $fz-default + 4;
+$fz-title:           36px;
+
+
+// Animation
+
+$tf-default:         ease;
+$trans-default:      0.3s $tf-default;
+$trans-100:          0.13s $tf-default;

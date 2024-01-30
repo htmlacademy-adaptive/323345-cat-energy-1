@@ -1,0 +1,61 @@
+.promo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo__title {
+  margin: 26px 0;
+  font-family: $ff-title;
+  font-size: $fz-title;
+  color: $color-font-title;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+
+  &--small {
+    display: block;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+.promo__text {
+  font-family: $ff-title;
+  font-size: 14px;
+  color: $color-font-title;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  &--small {
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 0 29px;
+  }
+}
+
+.promo__cat-img-wrap {
+  width: 320px;
+  height: 302px;
+  background: rgba(104, 183, 56);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.promo__cat-img {
+  opacity: 0.15;
+}
+
+.promo__food-img {
+  text-align: center;
+}
+
+.promo__button {
+  padding: 10px 44px;
+  background-color: $color-bg-second;
+}

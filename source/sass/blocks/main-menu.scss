@@ -1,0 +1,112 @@
+// Навигационное меню в шапке сайта (бургер меню)
+.main-menu__toggle {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin-bottom: 3px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: $trans-100;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: 0 6px 0 0 #000000, 0 -6px 0 0 #000000;
+    transition: $trans-default;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    display: none;
+    background: url("../../img/svg/burger-open.svg") center center no-repeat;
+    transition: $trans-default;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #f58752;
+    transition: $trans-100;
+  }
+}
+
+.main-menu:hover .main-menu__toggle::before {
+  background-color: $color-bg-second;
+  box-shadow: 0 6px 0 0 $color-bg-second, 0 -6px 0 0 $color-bg-second;
+  transition: $trans-default;
+}
+
+.main-menu:active .main-menu__toggle::before {
+  display: none;
+}
+
+.main-menu:active .main-menu__toggle::after {
+  display: block;
+}
+
+.main-menu:active .main-menu__list {
+  display: flex;
+}
+
+.main-menu__list {
+  position: absolute;
+  left: 0;
+  top: 66px;
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid#E6E6E6;
+  background-color: #ffffff;
+  list-style: none;
+  z-index: 1;
+}
+
+.main-menu__link {
+  position: relative;
+  font-family: $ff-title;
+  text-decoration: none;
+  color: $color-font-title;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+    transition: $trans-default;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: $trans-default;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #f58752;
+    transition: $trans-100;
+  }
+
+  &--current {
+    border-bottom: 2px solid $color-bg-second;
+  }
+}
+
+.main-menu__item {
+  padding: 23px 0;
+  width: 100%;
+  border-bottom: 1px solid#E6E6E6;
+  text-align: center;
+}

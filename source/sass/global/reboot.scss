@@ -1,0 +1,16 @@
+// сюда заносим общие стили для глобальных тегов
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}

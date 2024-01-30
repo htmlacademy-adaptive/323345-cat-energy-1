@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__wrap {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  margin: 23px 0;
+  width: 68%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  transition: $trans-100;
+
+  &:hover {
+    opacity: 0.8;
+    transition: $trans-default;
+  }
+
+  &:active {
+    opacity: 0.6;
+    transition: $trans-default;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #f58752;
+    transition: $trans-100;
+  }
+}
+
