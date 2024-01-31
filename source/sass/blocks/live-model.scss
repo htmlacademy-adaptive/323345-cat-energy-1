@@ -1,0 +1,83 @@
+.live-model {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.live-model__title {
+  font-family: $ff-title;
+  font-size: $fz-title;
+  font-style: normal;
+  line-height: 40px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.live-model__text {
+  font-family: $ff-default;
+  font-size: $fz-default;
+  color: $color-font;
+  line-height: $lh-default;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.live-model__rates-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.live-model__rates {
+  position: relative;
+  width: 124px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+.live-model__stats {
+  font-family: $ff-title;
+  font-size: 24px;
+  color: #000000;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -14.5px;
+    left: 0;
+    width: 124px;
+    height: 56px;
+    background: url("../../img/svg/weight-back-small.svg") no-repeat;
+  }
+}
+
+.live-model__description {
+  top: 31px;
+  width: 77px;
+  text-align: center;
+  font-family: $ff-default;
+  font-size: $fz-default;
+  color: $color-font;
+  line-height: 12px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.live-model__price {
+  margin: 0;
+  color: #000000;
+  font-family: $ff-title;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
