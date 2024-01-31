@@ -1,5 +1,11 @@
 .live-model {
+  width: 100%;
+  background-color: #eaeaea;
+}
+
+.live-model-wrap {
   width: 280px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
