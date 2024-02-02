@@ -5,6 +5,7 @@
 
 .live-model-wrap {
   width: 280px;
+  padding: 14px 0 40px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -18,6 +19,7 @@
   line-height: 40px;
   color: #000000;
   font-weight: 400;
+  margin: 25px 0 20px;
 }
 
 .live-model__text {
@@ -32,6 +34,7 @@
 .live-model__rates-wrap {
   display: flex;
   justify-content: space-between;
+  margin-top: 14.5px;
 }
 
 .live-model__rates {
@@ -64,7 +67,6 @@
 }
 
 .live-model__description {
-  top: 31px;
   width: 77px;
   text-align: center;
   font-family: $ff-default;
@@ -86,4 +88,30 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.live-model__slider {
+  position: relative;
+}
+
+.live-model__slider::before {
+  content: "";
+  position: absolute;
+  left: 138px;
+  width: 4px;
+  height: 256px;
+  border-radius: 2px;
+  background-color: #666666;
+}
+
+.live-model__slider::after {
+  content: "";
+  position: absolute;
+  left: 120px;
+  top: 109px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid #666666;
+  background: url("../../img/svg/dabl-arrow.svg") center center no-repeat #ffffff;
 }
