@@ -8,7 +8,7 @@
 }
 
 .diet__options {
-  background-color: $olor-bg-three;
+  background-color: $color-bg-three;
 }
 
 .diet__options-wrap {
@@ -106,7 +106,7 @@
   }
 
   &:focus-visible {
-    outline: 2px solid #f58752;
+    outline: 2px solid $color-outline;
     transition: $trans-100;
   }
 
@@ -114,6 +114,7 @@
     width: 18px;
     height: 12px;
     margin-left: 15px;
+    padding-right: 6px;
     transition: width 1s ease;
     overflow: visible;
   }
