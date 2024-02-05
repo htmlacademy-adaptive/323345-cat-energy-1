@@ -1,0 +1,42 @@
+.form {
+  font-family: $ff-title;
+  font-weight: 400;
+  color: $color-font;
+  font-style: normal;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+.feedback {
+  border: none;
+}
+
+.feedback__title-form {
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: none;
+}
+
+.feedback__subtitle {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: none;
+}
+
+.feedback__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.feedback__box {
+  display: flex;
+  align-items: baseline;
+  justify-content: start;
+}
+
+.feedback__text {
+  font-size: 16px;
+  line-height: 18px;
+}
