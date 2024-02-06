@@ -1,0 +1,54 @@
+.card {
+  display: flex;
+  align-items: center;
+}
+
+.card__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__img {
+  margin: 10.5px 36px;
+}
+
+.card__info {
+  width: 100%;
+  font-family: $ff-default;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-font;
+
+  th {
+    font-weight: 400;
+  }
+
+  td {
+    text-align: end;
+  }
+}
+
+.card__name {
+  width: 76px;
+  font-family: $ff-title;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: start;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.catalog__button {
+  width: 100%;
+  padding: 10px auto;
+  font-family: $ff-title;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $color-bg-second;
+  border: none;
+}

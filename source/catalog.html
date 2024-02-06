@@ -8,42 +8,53 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="page-body page-body--small">
   <header class="header">
-    <a class="header__logo" href="./index.html">
-      <svg class="header__icon-small" xmlns="http://www.w3.org/2000/svg" width="33" height="38" fill="none">
-        <g clip-path="url(#a)">
-          <path fill="#FDC305" d="M6.012 20.935V18.65a139.135 139.135 0 0 1 19.976-1.343c0 .606 0 1.222-.06 1.838 1.9-.86 3.896-1.477 5.943-1.838a16.767 16.767 0 0 0-6.767-8.285 16.248 16.248 0 0 0-10.306-2.398c-3.6.374-6.98 1.945-9.62 4.47a16.948 16.948 0 0 0-4.99 9.506l5.824.334ZM26.978 24.481c-1.149 1.293-1.376 1.213-1.376 3.486v9.275a16.692 16.692 0 0 0 5.425-6.052A17.08 17.08 0 0 0 33 23.237c-.013-1.051-.12-2.1-.317-3.132a32.856 32.856 0 0 0-5.705 4.375ZM6.299 25.987s-3.754-1.455-5.14-1.85A8.33 8.33 0 0 0 0 23.856a17.066 17.066 0 0 0 2.463 8.233A16.633 16.633 0 0 0 8.598 38L6.299 25.987Z" />
-          <path fill="#F06351" d="M26.038 17.297A92.52 92.52 0 0 0 24.65.657s-.139-1.304-.881-.243a14.583 14.583 0 0 0-1.189 3.981 68.295 68.295 0 0 0-12.647.344C9.15 2.02 7.774.758 7.11 1.01c-.664.253-.713 3.345-.713 3.345L6.071 18.6a139.094 139.094 0 0 1 19.967-1.303Z" />
-          <path fill="#000" d="M12.29 14.145c0-.09.991.687 1.397.93.406.242.604.424.604.596s-.267.343-.623.343c-.357 0-.902-.12-.99-.272h1.217a8.34 8.34 0 0 1-1.604-1.597ZM19.699 14.256l-1.08 1.344c0 .06-.168.354.179.303.41-.062.814-.16 1.208-.293.109 0 .07-.192-.109-.172-.178.02-.683.051-.99.112l.832-1.274s.069-.13-.04-.02ZM16.59 20.41c.458-.207.838-.562 1.079-1.01.277-.658 0-.92-.436-1.011a2.367 2.367 0 0 0-1.723.343c-.387.364-.337.728-.05 1.01.348.27.727.494 1.13.668Z" />
-          <path fill="#F06351" d="M16.193 21.672c-.111.231-.266.437-.456.607a1.693 1.693 0 0 1-.99.384 2.1 2.1 0 0 1-1.456-.435 2.289 2.289 0 0 1-.525-.444 1.059 1.059 0 0 0-.356-.263s.742 4.142 2.545 4.8c1.803.656 2.12-.759 2.179-1.143a5.758 5.758 0 0 0-.812-3.263c-.02-.313-.03-.111-.129-.243Z" />
-          <path fill="#000" d="M14.569 22.824a3.364 3.364 0 0 1-1.3-.474 3.437 3.437 0 0 1-1.039-1.007.145.145 0 0 1 .076-.187.136.136 0 0 1 .153.031 3.22 3.22 0 0 0 2.09 1.314c.328-.025.646-.13.927-.306.28-.176.516-.417.687-.704l.139-.192.099.212s.366.768.99.808c.624.04 1.04-.414 1.595-1.293a.138.138 0 0 1 .198 0c.032.02.055.053.064.09a.154.154 0 0 1-.015.112c-.633 1.01-1.257 1.455-1.861 1.414a1.518 1.518 0 0 1-.642-.253 1.555 1.555 0 0 1-.468-.514 2.255 2.255 0 0 1-.74.67c-.294.165-.62.26-.953.28Z" />
-          <path fill="#F06351" d="M25.988 19.116a58.7 58.7 0 0 0-5.021 5.244 31.579 31.579 0 0 1-5.24 4.94c-.217-.535-1.604-1.525-1.604-1.525s-3.1-2.162-5.13-3.86a34.1 34.1 0 0 1-3.1-3.03l-1.98-.112c2.861 4.25 7.05 7.384 11.884 8.892.852-.142 3.238-1.88 5.021-3.294a58.146 58.146 0 0 0 5.883-5.951c.498-.596.88-1.281 1.13-2.021-1.09.394-1.843.717-1.843.717Z" />
-        </g>
-        <defs>
-          <clipPath id="a">
-            <path fill="#fff" d="M0 0h33v38H0z" />
-          </clipPath>
-        </defs>
-      </svg>
-      <p class="header__logo-text"><b>Cat</b> Energy</p>
-    </a>
-    <nav class="header__nav main-menu">
-      <button class="main-menu__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-menu__list">
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="./index.html">Главная</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="./catalog.html">Каталог продукции</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="./form.html">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="container container--small">
+      <a class="header__logo" href="./index.html">
+        <svg class="header__icon-small" xmlns="http://www.w3.org/2000/svg" width="33" height="38" fill="none">
+          <g clip-path="url(#a)">
+            <path fill="#FDC305" d="M6.012 20.935V18.65a139.135 139.135 0 0 1 19.976-1.343c0 .606 0 1.222-.06 1.838 1.9-.86 3.896-1.477 5.943-1.838a16.767 16.767 0 0 0-6.767-8.285 16.248 16.248 0 0 0-10.306-2.398c-3.6.374-6.98 1.945-9.62 4.47a16.948 16.948 0 0 0-4.99 9.506l5.824.334ZM26.978 24.481c-1.149 1.293-1.376 1.213-1.376 3.486v9.275a16.692 16.692 0 0 0 5.425-6.052A17.08 17.08 0 0 0 33 23.237c-.013-1.051-.12-2.1-.317-3.132a32.856 32.856 0 0 0-5.705 4.375ZM6.299 25.987s-3.754-1.455-5.14-1.85A8.33 8.33 0 0 0 0 23.856a17.066 17.066 0 0 0 2.463 8.233A16.633 16.633 0 0 0 8.598 38L6.299 25.987Z" />
+            <path fill="#F06351" d="M26.038 17.297A92.52 92.52 0 0 0 24.65.657s-.139-1.304-.881-.243a14.583 14.583 0 0 0-1.189 3.981 68.295 68.295 0 0 0-12.647.344C9.15 2.02 7.774.758 7.11 1.01c-.664.253-.713 3.345-.713 3.345L6.071 18.6a139.094 139.094 0 0 1 19.967-1.303Z" />
+            <path fill="#000" d="M12.29 14.145c0-.09.991.687 1.397.93.406.242.604.424.604.596s-.267.343-.623.343c-.357 0-.902-.12-.99-.272h1.217a8.34 8.34 0 0 1-1.604-1.597ZM19.699 14.256l-1.08 1.344c0 .06-.168.354.179.303.41-.062.814-.16 1.208-.293.109 0 .07-.192-.109-.172-.178.02-.683.051-.99.112l.832-1.274s.069-.13-.04-.02ZM16.59 20.41c.458-.207.838-.562 1.079-1.01.277-.658 0-.92-.436-1.011a2.367 2.367 0 0 0-1.723.343c-.387.364-.337.728-.05 1.01.348.27.727.494 1.13.668Z" />
+            <path fill="#F06351" d="M16.193 21.672c-.111.231-.266.437-.456.607a1.693 1.693 0 0 1-.99.384 2.1 2.1 0 0 1-1.456-.435 2.289 2.289 0 0 1-.525-.444 1.059 1.059 0 0 0-.356-.263s.742 4.142 2.545 4.8c1.803.656 2.12-.759 2.179-1.143a5.758 5.758 0 0 0-.812-3.263c-.02-.313-.03-.111-.129-.243Z" />
+            <path fill="#000" d="M14.569 22.824a3.364 3.364 0 0 1-1.3-.474 3.437 3.437 0 0 1-1.039-1.007.145.145 0 0 1 .076-.187.136.136 0 0 1 .153.031 3.22 3.22 0 0 0 2.09 1.314c.328-.025.646-.13.927-.306.28-.176.516-.417.687-.704l.139-.192.099.212s.366.768.99.808c.624.04 1.04-.414 1.595-1.293a.138.138 0 0 1 .198 0c.032.02.055.053.064.09a.154.154 0 0 1-.015.112c-.633 1.01-1.257 1.455-1.861 1.414a1.518 1.518 0 0 1-.642-.253 1.555 1.555 0 0 1-.468-.514 2.255 2.255 0 0 1-.74.67c-.294.165-.62.26-.953.28Z" />
+            <path fill="#F06351" d="M25.988 19.116a58.7 58.7 0 0 0-5.021 5.244 31.579 31.579 0 0 1-5.24 4.94c-.217-.535-1.604-1.525-1.604-1.525s-3.1-2.162-5.13-3.86a34.1 34.1 0 0 1-3.1-3.03l-1.98-.112c2.861 4.25 7.05 7.384 11.884 8.892.852-.142 3.238-1.88 5.021-3.294a58.146 58.146 0 0 0 5.883-5.951c.498-.596.88-1.281 1.13-2.021-1.09.394-1.843.717-1.843.717Z" />
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff" d="M0 0h33v38H0z" />
+            </clipPath>
+          </defs>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="101" height="18" fill="none">
+          <g fill="#111" clip-path="url(#a1)">
+            <path d="M1.26 16.54A6.86 6.86 0 0 1 0 12.24v-6.4C-.1 4.3.3 2.77 1.19 1.47 2.05.46 3.39 0 5.37 0 7.35 0 8.61.46 9.4 1.3a5.42 5.42 0 0 1 1.19 3.78v1.54H6.72V4.85a3.7 3.7 0 0 0-.24-1.54 1.16 1.16 0 0 0-1.1-.62c-.56 0-.95.16-1.11.54a4.85 4.85 0 0 0-.24 1.7v8.22c-.04.56.07 1.12.32 1.62.15.38.55.54 1.1.54.56 0 .87-.16 1.03-.54.18-.52.26-1.07.24-1.62v-1.84h3.87v1.54a5.77 5.77 0 0 1-1.19 3.84c-.79.93-2.13 1.39-4.03 1.39-1.9-.08-3.32-.54-4.1-1.54ZM15.25.23h4.5l3.33 17.54h-3.64l-.63-3.7h-2.6l-.64 3.7h-3.72L15.25.23Zm3.24 11.54-.95-6.85-.94 6.85h1.9ZM25.84 3.15h-2.68V.23h9.4v2.85h-2.69v14.69h-4.03V3.15ZM39.75.23h6.96v1.85h-4.5v5.77h3.63v1.77H42.2v6.46h4.5v1.77h-7.03V.23h.08ZM48.76.23h1.74l5.14 11.62V.23h2.05v17.54h-1.58l-5.21-12v12h-2.14V.23ZM60.06.23h6.96v1.85h-4.5v5.77h3.63v1.77H62.5v6.46h4.5v1.77h-6.95V.23ZM69.07.23h3.64c1.43-.1 2.85.28 4.03 1.08C77.6 2 78 3.23 78 4.85c0 2.23-.7 3.61-2.21 4.07l2.53 8.77h-2.45L73.5 9.46h-1.98v8.23H69V.23h.08Zm3.48 7.54c.81.06 1.63-.15 2.3-.62.47-.38.7-1.15.7-2.3a4.85 4.85 0 0 0-.23-1.7c-.18-.39-.49-.71-.87-.92a3.69 3.69 0 0 0-1.74-.3h-1.1v5.76h.94v.08ZM81.16 16.46a7.61 7.61 0 0 1-1.1-4.46V6.15c-.02-1.11.11-2.22.4-3.3.26-.81.78-1.51 1.5-2 .88-.51 1.9-.75 2.92-.7 1.66 0 2.84.39 3.55 1.23a5.77 5.77 0 0 1 1.11 3.85v.62h-2.37V5.3c0-.65-.05-1.29-.16-1.93-.06-.4-.3-.76-.63-1a2.5 2.5 0 0 0-1.5-.38 2.42 2.42 0 0 0-1.58.46 1.75 1.75 0 0 0-.63 1.23c-.1.69-.16 1.38-.16 2.08v6.54c-.06 1 .1 2 .47 2.92.32.62.95.85 1.9.85a1.96 1.96 0 0 0 1.9-.93c.41-.97.6-2.02.55-3.07v-1.23h-2.3V9.08h4.59v8.69h-1.58l-.24-2c-.2.67-.64 1.25-1.22 1.66-.6.4-1.3.6-2.02.57a4.05 4.05 0 0 1-3.4-1.54ZM94.68 11.62 90.8.3h2.37l2.76 8.46L98.63.3H101l-3.87 11.3v6.16h-2.37v-6.15h-.08Z" />
+          </g>
+          <defs>
+            <clipPath id="a1">
+              <path fill="#fff" d="M0 0h101v18H0z" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <nav class="header__nav main-menu">
+        <button class="main-menu__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-menu__list">
+          <li class="main-menu__item">
+            <a class="main-menu__link main-menu__link--current" href="./index.html">Главная</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="./catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="./form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="catalog">
     <section class="catalog__cards">
@@ -51,7 +62,7 @@
       <ul class="catalog__list">
         <li class="catalog__item">
           <div class="catalog__card card">
-            <img class="card__img" src="./img/product/pro-chicken-500.jpg" width="140" height="107" alt="Cat Energy PRO 500 грамм со вкусом курицы">
+            <img class="card__img" src="./img/product/pro-chicken-500.png" width="68" height="86" alt="Cat Energy PRO 500 грамм со вкусом курицы">
             <table class="card__info">
               <caption class="card__name">Cat Energy PRO 500 г</caption>
               <tr>
@@ -67,12 +78,12 @@
                 <td>700&nbsp;&#8381;</td>
               </tr>
             </table>
-            <button class="catalog__button" type="submit">Заказать</button>
           </div>
+          <button class="catalog__button" type="submit">Заказать</button>
         </li>
         <li class="catalog__item">
           <div class="catalog__card card">
-            <img class="card__img" src="./img/product/pro-chicken-1000.jpg" width="140" height="107" alt="Cat Energy PRO 1000 грамм со вкусом курицы">
+            <img class="card__img" src="./img/product/pro-chicken-1000.png" width="68" height="86" alt="Cat Energy PRO 1000 грамм со вкусом курицы">
             <table class="card__info">
               <caption class="card__name">Cat Energy PRO 1000 г</caption>
               <tr>
@@ -88,12 +99,12 @@
                 <td>1000&nbsp;&#8381;</td>
               </tr>
             </table>
-            <button class="catalog__button" type="submit">Заказать</button>
           </div>
+          <button class="catalog__button" type="submit">Заказать</button>
         </li>
         <li class="catalog__item">
           <div class="catalog__card card">
-            <img class="card__img" src="./img/product/pro-fish-500.jpg" width="140" height="107" alt="Cat Energy PRO 500 грамм со вкусом рыбы">
+            <img class="card__img" src="./img/product/pro-fish-500.png" width="68" height="86" alt="Cat Energy PRO 500 грамм со вкусом рыбы">
             <table class="card__info">
               <caption class="card__name">Cat Energy PRO 500 г</caption>
               <tr>
@@ -109,12 +120,12 @@
                 <td>700&nbsp;&#8381;</td>
               </tr>
             </table>
-            <button class="catalog__button" type="submit">Заказать</button>
           </div>
+          <button class="catalog__button" type="submit">Заказать</button>
         </li>
         <li class="catalog__item">
           <div class="catalog__card card">
-            <img class="card__img" src="./img/product/pro-fish-1000.jpg" alt="at Energy PRO 1000 грамм со вкусом рыбы">
+            <img class="card__img" src="./img/product/pro-fish-1000.png" width="68" height="86" alt="at Energy PRO 1000 грамм со вкусом рыбы">
             <table class="card__info">
               <caption class="card__name">Cat Energy PRO 1000 г</caption>
               <tr>
@@ -130,12 +141,12 @@
                 <td>1000&nbsp;&#8381;</td>
               </tr>
             </table>
-            <button class="catalog__button" type="submit">Заказать</button>
           </div>
+          <button class="catalog__button" type="submit">Заказать</button>
         </li>
         <li class="catalog__item">
           <div class="catalog__card card">
-            <img class="card__img" src="./img/product/slim-buckwheat-500.jpg" width="140" height="107" alt="Cat Energy SLIM 500 грамм со вкусом гречки">
+            <img class="card__img" src="./img/product/slim-buckwheat-500.png" width="68" height="86" alt="Cat Energy SLIM 500 грамм со вкусом гречки">
             <table class="card__info">
               <caption class="card__name">Cat Energy SLIM 500 г</caption>
               <tr>
@@ -151,12 +162,12 @@
                 <td>400&nbsp;&#8381;</td>
               </tr>
             </table>
-            <button class="catalog__button" type="submit">Заказать</button>
           </div>
+          <button class="catalog__button" type="submit">Заказать</button>
         </li>
         <li class="catalog__item">
           <div class="catalog__card card">
-            <img class="card__img" src="./img/product/slim-buckwheat-1000.jpg" width="140" height="107" alt="Cat Energy SLIM 1000 грамм со вкусом гречки">
+            <img class="card__img" src="./img/product/slim-buckwheat-1000.png" width="68" height="86" alt="Cat Energy SLIM 1000 грамм со вкусом гречки">
             <table class="card__info">
               <caption class="card__name">Cat Energy SLIM 1000 г</caption>
               <tr>
@@ -172,12 +183,12 @@
                 <td>700&nbsp;&#8381;</td>
               </tr>
             </table>
-            <button class="catalog__button" type="submit">Заказать</button>
           </div>
+          <button class="catalog__button" type="submit">Заказать</button>
         </li>
         <li class="catalog__item">
           <div class="catalog__card card">
-            <img class="card__img" src="./img/product/slim-rice-500.jpg" width="140" height="107" alt="Cat Energy SLIM 500 грамм со вкусом риса">
+            <img class="card__img" src="./img/product/slim-rice-500.png" width="68" height="86" alt="Cat Energy SLIM 500 грамм со вкусом риса">
             <table class="card__info">
               <caption class="card__name">Cat Energy SLIM 500 г</caption>
               <tr>
@@ -193,8 +204,8 @@
                 <td>500&nbsp;&#8381;</td>
               </tr>
             </table>
-            <button class="catalog__button" type="submit">Заказать</button>
           </div>
+          <button class="catalog__button" type="submit">Заказать</button>
         </li>
         <li class="catalog__item">
           <div class="catalog__card card">
@@ -210,8 +221,8 @@
                 <th>На самом деле вкусов гораздо больше!</th>
               </tr>
             </table>
-            <button class="catalog__button" type="submit">Показать все</button>
           </div>
+          <button class="catalog__button" type="submit">Показать все</button>
         </li>
       </ul>
     </section>
@@ -239,8 +250,8 @@
                 <td>50&nbsp;&#8381;</td>
               </tr>
             </table>
-            <button class="catalog__button" type="submit">Заказать</button>
           </div>
+          <button class="catalog__button" type="submit">Заказать</button>
         </li>
         <li class="extra-product__item">
           <div class="extra-product__card extra-card">
@@ -251,8 +262,8 @@
                 <td>100&nbsp;&#8381;</td>
               </tr>
             </table>
-            <button class="catalog__button" type="submit">Заказать</button>
           </div>
+          <button class="catalog__button" type="submit">Заказать</button>
         </li>
         <li class="extra-product__item">
           <div class="extra-product__card extra-card">
@@ -263,8 +274,8 @@
                 <td>300&nbsp;&#8381;</td>
               </tr>
             </table>
-            <button class="catalog__button" type="submit">Заказать</button>
           </div>
+          <button class="catalog__button" type="submit">Заказать</button>
         </li>
       </ul>
       <div class="extra-product__gift gift">
@@ -279,30 +290,48 @@
         <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>
-    <section class="contacts">
-      <h2 class="visually-hidden">Наш адресс</h2>
-      <p class="contacts__baner">Приглашаем к сотрудничеству дилеров!</p>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    <section class="contacts contacts-form-small">
+      <div class="contacts__wrap">
+        <h2 class="visually-hidden">Наш адресс</h2>
+        <p class="contacts__baner">Приглашаем<br>к сотрудничеству дилеров!</p>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
       <img class="contacts__img" src="./img/map-small.jpg" width="320" height="362" alt="Карта проезда">
     </section>
   </main>
   <footer class="footer">
-    <p class="footer__title"><b>Cat</b> Energy</p>
-    <nav class="footer__nav">
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a class="footer__link footer__link--vkontakte" href="#">Мы в Вконтакте</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link footer__link--youtube" href="#">Мы в Ютубе</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link footer__link--telegram" href="#">Мы в Телеграме</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
+    <div class="container container--small container--column">
+      <a class="footer__logo" href="./index.html">
+        <svg class="footer__logo-img" xmlns="http://www.w3.org/2000/svg" width="101" height="18" fill="none">
+          <g class="footer__logo-color" fill="#111" clip-path="url(#a1)">
+            <path d="M1.26 16.54A6.86 6.86 0 0 1 0 12.24v-6.4C-.1 4.3.3 2.77 1.19 1.47 2.05.46 3.39 0 5.37 0 7.35 0 8.61.46 9.4 1.3a5.42 5.42 0 0 1 1.19 3.78v1.54H6.72V4.85a3.7 3.7 0 0 0-.24-1.54 1.16 1.16 0 0 0-1.1-.62c-.56 0-.95.16-1.11.54a4.85 4.85 0 0 0-.24 1.7v8.22c-.04.56.07 1.12.32 1.62.15.38.55.54 1.1.54.56 0 .87-.16 1.03-.54.18-.52.26-1.07.24-1.62v-1.84h3.87v1.54a5.77 5.77 0 0 1-1.19 3.84c-.79.93-2.13 1.39-4.03 1.39-1.9-.08-3.32-.54-4.1-1.54ZM15.25.23h4.5l3.33 17.54h-3.64l-.63-3.7h-2.6l-.64 3.7h-3.72L15.25.23Zm3.24 11.54-.95-6.85-.94 6.85h1.9ZM25.84 3.15h-2.68V.23h9.4v2.85h-2.69v14.69h-4.03V3.15ZM39.75.23h6.96v1.85h-4.5v5.77h3.63v1.77H42.2v6.46h4.5v1.77h-7.03V.23h.08ZM48.76.23h1.74l5.14 11.62V.23h2.05v17.54h-1.58l-5.21-12v12h-2.14V.23ZM60.06.23h6.96v1.85h-4.5v5.77h3.63v1.77H62.5v6.46h4.5v1.77h-6.95V.23ZM69.07.23h3.64c1.43-.1 2.85.28 4.03 1.08C77.6 2 78 3.23 78 4.85c0 2.23-.7 3.61-2.21 4.07l2.53 8.77h-2.45L73.5 9.46h-1.98v8.23H69V.23h.08Zm3.48 7.54c.81.06 1.63-.15 2.3-.62.47-.38.7-1.15.7-2.3a4.85 4.85 0 0 0-.23-1.7c-.18-.39-.49-.71-.87-.92a3.69 3.69 0 0 0-1.74-.3h-1.1v5.76h.94v.08ZM81.16 16.46a7.61 7.61 0 0 1-1.1-4.46V6.15c-.02-1.11.11-2.22.4-3.3.26-.81.78-1.51 1.5-2 .88-.51 1.9-.75 2.92-.7 1.66 0 2.84.39 3.55 1.23a5.77 5.77 0 0 1 1.11 3.85v.62h-2.37V5.3c0-.65-.05-1.29-.16-1.93-.06-.4-.3-.76-.63-1a2.5 2.5 0 0 0-1.5-.38 2.42 2.42 0 0 0-1.58.46 1.75 1.75 0 0 0-.63 1.23c-.1.69-.16 1.38-.16 2.08v6.54c-.06 1 .1 2 .47 2.92.32.62.95.85 1.9.85a1.96 1.96 0 0 0 1.9-.93c.41-.97.6-2.02.55-3.07v-1.23h-2.3V9.08h4.59v8.69h-1.58l-.24-2c-.2.67-.64 1.25-1.22 1.66-.6.4-1.3.6-2.02.57a4.05 4.05 0 0 1-3.4-1.54ZM94.68 11.62 90.8.3h2.37l2.76 8.46L98.63.3H101l-3.87 11.3v6.16h-2.37v-6.15h-.08Z" />
+          </g>
+          <defs>
+            <clipPath id="a1">
+              <path fill="#fff" d="M0 0h101v18H0z" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <nav class="footer__nav footer__nav--small">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link footer__link--vkontakte" href="#" aria-label="Мы в Вконтакте">
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link footer__link--youtube" href="#" aria-label="Мы в Ютубе">
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link footer__link--telegram" href="#" aria-label="Мы в Телеграме">
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__copyright">
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/">HTML Academy</a>
+      </div>
     </div>
   </footer>
 </body>

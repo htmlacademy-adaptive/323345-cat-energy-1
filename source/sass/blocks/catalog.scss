@@ -1,0 +1,18 @@
+// Стили Каталога
+.catalog {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.catalog__title {
+  font-family: $ff-title;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.catalog__list {
+  list-style-type: none;
+  padding: 0;
+}
