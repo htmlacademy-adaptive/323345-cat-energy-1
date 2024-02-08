@@ -1,0 +1,34 @@
+.gift {
+  position: relative;
+  padding: 35px 0;
+}
+
+.gift__img-wrap {
+  background: #68b738d9;
+}
+
+.gift__img {
+  opacity: 0.23;
+  mix-blend-mode: multiply;
+  background-size: contain;
+}
+
+.gift__icon {
+  position: absolute;
+  top: 93px;
+  left: 101px;
+}
+
+
+.gift__text {
+  position: absolute;
+  bottom: 67px;
+  left: 64px;
+  width: 160px;
+  font-family: $ff-default;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}

@@ -5,6 +5,7 @@
   &--more {
     flex-direction: column;
     padding-top: 5px;
+    margin-bottom: 6px;
   }
 }
 
@@ -42,21 +43,6 @@
   text-align: start;
   color: #222222;
   text-transform: uppercase;
-}
-
-.catalog__button {
-  width: 100%;
-  padding: 10px auto;
-  margin-top: 21px;
-  font-family: $ff-title;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: $color-bg-second;
-  border: none;
 }
 
 .card__add-img {

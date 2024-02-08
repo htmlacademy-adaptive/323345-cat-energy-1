@@ -1,11 +1,62 @@
 .extra-product {
   font-weight: 400;
+  font-style: normal;
+  margin: 0 auto;
+
+  &--small {
+    width: 280px;
+  }
 }
 
 .extra-product__title {
+  margin-bottom: 36px;
   font-family: $ff-title;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   color: #000000;
 }
 
+.extra-card__name {
+  margin-top: 13px;
+  margin-bottom: 13px;
+  font-family: $ff-title;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.extra-product__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #cdcdcd;
+}
+
+.extra-product__card {
+  padding-bottom: 19px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.extra-card__info {
+  width: 100%;
+
+  th {
+    font-family: $ff-default;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: $color-font;
+  }
+
+  td {
+    text-align: end;
+    font-family: $ff-default;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: $color-font;
+  }
+}
