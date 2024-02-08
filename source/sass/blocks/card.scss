@@ -1,6 +1,11 @@
 .card {
   display: flex;
   align-items: center;
+
+  &--more {
+    flex-direction: column;
+    padding-top: 5px;
+  }
 }
 
 .card__wrap {
@@ -42,6 +47,7 @@
 .catalog__button {
   width: 100%;
   padding: 10px auto;
+  margin-top: 21px;
   font-family: $ff-title;
   font-size: 16px;
   font-weight: 400;
@@ -51,4 +57,29 @@
   text-transform: uppercase;
   background-color: $color-bg-second;
   border: none;
+}
+
+.card__add-img {
+  margin-bottom: 23px;
+  width: 30px;
+  height: 30px;
+  background: url("../../img/svg/icon-plus.svg") center center no-repeat;
+}
+
+.card__add-title {
+  font-family: $ff-title;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: start;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.card__add-text {
+  width: 100%;
+  font-family: $ff-default;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-font;
+  text-align: center;
 }
