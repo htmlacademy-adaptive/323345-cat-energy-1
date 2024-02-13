@@ -1,9 +1,7 @@
 .button {
   text-align: center;
   font-family: $ff-title;
-  color: #ffffff;
-  font-style: normal;
-  font-weight: 400;
+  color: $color-bg-basic;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -12,13 +10,13 @@
   border: none;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $color-bg-button;
     transition: $trans-default;
   }
 
   &:active {
-    color: rgb(255, 255, 255, 0.3);
-    background-color: #5eaa2f;
+    color: rgba($color-bg-basic, 0.3);
+    background-color: $color-bg-button;
     transition: $trans-default;
   }
 

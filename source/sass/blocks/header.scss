@@ -1,11 +1,11 @@
 .header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #d9d9d9;
+  background-color: $color-bg-basic;
+  border-bottom: 1px solid $color-bg-four;
 }
 
 .header__logo {
   margin: 15px 0;
-  width: 68%;
+  width: 190px;
   display: flex;
   justify-content: space-between;
   align-items: center;

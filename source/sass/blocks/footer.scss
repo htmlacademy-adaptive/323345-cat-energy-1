@@ -1,42 +1,43 @@
 .footer {
-  background-color: #f2f2f2;
+  background-color: $color-bg-three;
   padding: 40px 0;
 }
 
 .footer__nav {
   position: relative;
+
+  &--small::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -65px;
+    width: 280px;
+    height: 1px;
+    background-color: $color-bg-four;
+  }
+
+  &--small::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: -65px;
+    width: 280px;
+    height: 1px;
+    background-color: $color-bg-four;
+  }
 }
 
-.footer__nav--small::before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: -65px;
-  width: 280px;
-  height: 1px;
-  background-color: #d9d9d9;
-}
-
-.footer__nav--small::after {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  left: -65px;
-  width: 280px;
-  height: 1px;
-  background-color: #d9d9d9;
-}
 
 .footer__logo {
   transition: $trans-default;
 
   &:hover .footer__logo-color {
-    fill: #3e3e3e;
+    fill: $color-logo-hover;
     transition: $trans-default;
   }
 
   &:active .footer__logo-color {
-    fill: #6b6b6b;
+    fill: $color-logo-active;
     transition: $trans-default;
   }
 }
@@ -55,9 +56,11 @@
   margin: 0 auto;
 }
 
-.footer__item:focus-visible {
-  outline: 2px solid $color-outline;
-  transition: $trans-100;
+.footer__item {
+  &:focus-visible {
+    outline: 2px solid $color-outline;
+    transition: $trans-100;
+  }
 }
 
 .footer__link {
@@ -65,12 +68,12 @@
   transition: $trans-default;
 
   &:hover {
-    background-color: #68b738;
+    background-color: $color-bg-second;
     transition: $trans-default;
   }
 
   &:active {
-    background-color: #68b738;
+    background-color: $color-bg-second;
     opacity: 0.3;
     transition: $trans-default;
   }
@@ -83,7 +86,7 @@
   &--vkontakte {
     width: 31px;
     height: 23px;
-    background-color: #666666;
+    background-color: $color-social;
     mask-image: url("../../img/svg/vkontakte.svg");
     mask-repeat: no-repeat;
     mask-position: center;
@@ -93,7 +96,7 @@
   &--youtube {
     width: 31px;
     height: 23px;
-    background-color: #666666;
+    background-color: $color-social;
     mask-image: url("../../img/svg/youtube.svg");
     mask-repeat: no-repeat;
     mask-position: center;
@@ -103,7 +106,7 @@
   &--telegram {
     width: 38px;
     height: 23px;
-    background-color: #666666;
+    background-color: $color-social;
     mask-image: url("../../img/svg/telegram.svg");
     mask-repeat: no-repeat;
     mask-position: center;
@@ -117,7 +120,7 @@
 }
 
 .footer__copyright-link {
-  color: rgb(68, 68, 68);
+  color: $color-font;
   font-family: $ff-default;
   font-size: 16px;
   font-weight: 400;
@@ -131,7 +134,7 @@
 
   &:hover,
   &:focus {
-    fill: #68b738;
+    fill: $color-bg-second;
   }
 
   &:active {

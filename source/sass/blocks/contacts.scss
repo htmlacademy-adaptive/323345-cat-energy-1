@@ -5,7 +5,7 @@
 }
 
 .contacts__wrap {
-  width: 280px;
+  padding: 0 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -16,9 +16,7 @@
   font-family: $ff-title;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400;
-  font-style: normal;
-  color: #111111;
+  color: $color-font-three;
   text-transform: uppercase;
 }
 
@@ -27,11 +25,10 @@
   color: $color-font;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
   font-style: normal;
 }
 
 
 .contacts-form-small {
-  background-color: #f2f2f2;
+  background-color: $color-bg-three;
 }

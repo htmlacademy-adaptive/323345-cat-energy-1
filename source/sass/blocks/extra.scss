@@ -20,7 +20,7 @@
   height: 30px;
   top: 3px;
   left: 0;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $color-border-second;
 }
 
 .extra__field[type="checkbox"]:checked + .extra__text-mark::before,

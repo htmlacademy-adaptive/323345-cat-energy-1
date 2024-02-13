@@ -16,7 +16,7 @@
 }
 
 .card__img {
-  margin: 10.5px 36px;
+  margin: 10px 36px;
 }
 
 .card__info {
@@ -41,7 +41,7 @@
   font-size: 16px;
   line-height: 20px;
   text-align: start;
-  color: #222222;
+  color: $color-font-second;
   text-transform: uppercase;
 }
 
@@ -57,7 +57,7 @@
   font-size: 16px;
   line-height: 20px;
   text-align: start;
-  color: #222222;
+  color: $color-font-second;
   text-transform: uppercase;
 }
 

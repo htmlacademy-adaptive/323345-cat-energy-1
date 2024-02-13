@@ -1,9 +1,8 @@
 .form {
   font-family: $ff-title;
-  font-weight: 400;
   color: $color-font;
   font-style: normal;
-  background-color: #ffffff;
+  background-color: $color-bg-basic;
   text-transform: uppercase;
 }
 
@@ -11,7 +10,7 @@
   margin: 27px auto 32px;
 
   &--small {
-    max-width: 280px;
+    padding: 0 20px;
   }
 }
 

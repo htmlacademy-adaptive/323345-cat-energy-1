@@ -17,7 +17,7 @@
   &--small {
     display: block;
     text-align: center;
-    color: #ffffff;
+    color: $color-bg-basic;
   }
 }
 
@@ -25,23 +25,19 @@
   font-family: $ff-title;
   font-size: 14px;
   color: $color-font-title;
-  font-style: normal;
-  font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
 
   &--small {
     display: block;
     text-align: center;
-    color: #ffffff;
+    color: $color-bg-basic;
     margin: 0 0 29px;
   }
 }
 
 .promo__cat-img-wrap {
-  // width: 320px;
-  // height: 302px;
-  background: rgba(104, 183, 56);
+  background: $color-bg-second;
   position: absolute;
   top: 0;
   z-index: -1;

@@ -4,7 +4,7 @@
 }
 
 .gift__img-wrap {
-  background: #68b738d9;
+  background: rgba($color-bg-second, 0.82);
 }
 
 .gift__img {
@@ -26,9 +26,8 @@
   left: 64px;
   width: 160px;
   font-family: $ff-default;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #ffffff;
+  color: $color-bg-basic;
 }

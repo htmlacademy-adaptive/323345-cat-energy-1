@@ -1,5 +1,5 @@
 .how-work--small {
-  width: 280px;
+  padding: 0 20px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -12,9 +12,8 @@
   font-family: $ff-title;
   font-size: $fz-title;
   line-height: 40px;
-  color: #000000;
+  color: $color-font-title;
   font-weight: 400;
-  font-style: normal;
 }
 
 .how-work__block {
@@ -32,8 +31,6 @@
   font-size: $fz-default;
   color: $color-font;
   line-height: $lh-default;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .how-work__text--leaf {
