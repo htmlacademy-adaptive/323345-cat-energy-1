@@ -1,0 +1,47 @@
+.form-feedback {
+  margin: 27px auto 32px;
+
+  &--small {
+    padding: 0 20px;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 15px;
+    font-family: $ff-title;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-bg-basic;
+    background-color: $color-bg-second;
+    border: none;
+
+    &:hover {
+      background-color: $color-bg-button;
+      transition: $trans-default;
+    }
+
+    &:active {
+      color: rgb(255, 255, 255, 0.3);
+      background-color: $color-bg-button;
+      transition: $trans-default;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-outline;
+      transition: $trans-100;
+    }
+  }
+
+  &__note {
+    margin: 0;
+    margin-top: 21px;
+    font-family: $ff-default;
+    font-size: $fz-default;
+    line-height: 16px;
+    text-transform: none;
+    color: $color-font-title;
+    text-align: center;
+  }
+}

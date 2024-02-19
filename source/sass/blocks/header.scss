@@ -1,0 +1,30 @@
+.header {
+  background-color: $color-bg-basic;
+  border-bottom: 1px solid $color-bg-four;
+}
+
+.header__logo {
+  margin: 15px 0;
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  transition: $trans-100;
+
+  &:hover {
+    opacity: 0.8;
+    transition: $trans-default;
+  }
+
+  &:active {
+    opacity: 0.6;
+    transition: $trans-default;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-outline;
+    transition: $trans-100;
+  }
+}
+

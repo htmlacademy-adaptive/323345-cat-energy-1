@@ -1,0 +1,50 @@
+.how-work--small {
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 49px;
+}
+
+.how-work__title {
+  margin: 0;
+  font-family: $ff-title;
+  font-size: $fz-title;
+  line-height: 40px;
+  color: $color-font-title;
+  font-weight: 400;
+}
+
+.how-work__block {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  gap: 26px;
+}
+
+.how-work__text {
+  margin: 0;
+  padding-left: 80px;
+  font-family: $ff-default;
+  font-size: $fz-default;
+  color: $color-font;
+  line-height: $lh-default;
+}
+
+.how-work__text--leaf {
+  background: url("../../img/svg/icon-leaf.svg") left center no-repeat;
+}
+
+.how-work__text--hot-water {
+  background: url("../../img/svg/icon-hot-water.svg") left center no-repeat;
+}
+
+.how-work__text--eat {
+  background: url("../../img/svg/icon-eat.svg") left center no-repeat;
+}
+
+.how-work__text--scale {
+  background: url("../../img/svg/icon-scale.svg") left center no-repeat;
+}

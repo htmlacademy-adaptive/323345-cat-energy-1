@@ -1,0 +1,35 @@
+.extra {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 13px;
+}
+
+.extra__lable {
+  position: relative;
+  padding: 6px 45px;
+}
+
+.extra__text-mark {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 3px;
+  left: 0;
+  border: 1px solid $color-border-second;
+}
+
+.extra__field[type="checkbox"]:checked + .extra__text-mark::before,
+.extra__field[type="checkbox"]:checked + .extra__text-mark::after {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 3px;
+  width: 26px;
+  height: 26px;
+  background: url("../../img/svg/icon-ok.svg") center center no-repeat;
+}
