@@ -1,0 +1,61 @@
+// Стили Каталога
+
+.catalog__card {
+  margin-bottom: 2px;
+}
+
+.catalog__title {
+  text-align: center;
+  font-family: $ff-title;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-font-title;
+  font-weight: 400;
+}
+
+.catalog__list {
+  list-style-type: none;
+  padding: 16px 0;
+  margin: 0;
+  border-top: 1px solid $color-border;
+}
+
+.catalog__item {
+  padding: 20px 20px 25px;
+  border-bottom: 1px solid $color-border;
+}
+
+.catalog__button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  font-family: $ff-title;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-bg-basic;
+  text-transform: uppercase;
+  background-color: $color-bg-second;
+  border: none;
+  cursor: pointer;
+
+  &--more {
+    background-color: $color-bg-three;
+    color: $color-font;
+  }
+
+  &:hover {
+    background-color: $color-bg-button;
+    transition: $trans-default;
+  }
+
+  &:active {
+    color: rgb($color-bg-basic, 0.3);
+    background-color: $color-bg-button;
+    transition: $trans-default;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-outline;
+    transition: $trans-100;
+  }
+}

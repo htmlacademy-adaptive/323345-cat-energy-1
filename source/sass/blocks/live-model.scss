@@ -1,0 +1,109 @@
+.live-model {
+  width: 100%;
+  background-color: $color-bg-five;
+}
+
+.live-model-wrap {
+  width: 280px;
+  padding: 14px 0 40px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.live-model__title {
+  font-family: $ff-title;
+  font-size: $fz-title;
+  font-style: normal;
+  line-height: 40px;
+  color: $color-font-title;
+  font-weight: 400;
+  margin: 25px 0 20px;
+}
+
+.live-model__text {
+  font-family: $ff-default;
+  font-size: $fz-default;
+  color: $color-font;
+  line-height: $lh-default;
+}
+
+.live-model__rates-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14.5px;
+}
+
+.live-model__rates {
+  position: relative;
+  width: 124px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+.live-model__stats {
+  font-family: $ff-title;
+  font-size: 24px;
+  color: $color-font-title;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -14.5px;
+    left: 0;
+    width: 124px;
+    height: 56px;
+    background: url("../../img/svg/weight-back-small.svg") no-repeat;
+  }
+}
+
+.live-model__description {
+  width: 77px;
+  text-align: center;
+  font-family: $ff-default;
+  font-size: $fz-default;
+  color: $color-font;
+  line-height: 12px;
+  text-transform: lowercase;
+}
+
+.live-model__price {
+  margin: 0;
+  color: $color-font-title;
+  font-family: $ff-title;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.live-model__slider {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 138px;
+    width: 4px;
+    height: 256px;
+    border-radius: 2px;
+    background-color: $color-social;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 120px;
+    top: 109px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid $color-social;
+    background: url("../../img/svg/dabl-arrow.svg") center center no-repeat $color-bg-basic;
+  }
+}
