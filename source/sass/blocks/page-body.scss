@@ -1,11 +1,19 @@
 .page-body {
-  width: 100%;
   height: 100%;
   margin: 0 auto;
-}
-
-.page-body--small {
   position: relative;
   width: 320px;
-  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-body {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-body {
+    width: $desktop-width;
+    padding: 0 110px;
+  }
 }

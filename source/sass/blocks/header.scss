@@ -1,6 +1,10 @@
 .header {
-  background-color: $color-bg-basic;
   border-bottom: 1px solid $color-bg-four;
+}
+
+.header__nav {
+  flex: 1;
+  text-align: end;
 }
 
 .header__logo {
@@ -28,3 +32,31 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .header {
+    border: none;
+    margin-top: 10px;
+  }
+
+  .header__logo {
+    width: 174px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    position: absolute;
+    border: none;
+    margin-top: 40px;
+    width: 85%;
+    z-index: 1;
+  }
+
+  .header__logo {
+    width: 202px;
+  }
+
+  .header__nav {
+    flex: inherit;
+  }
+}
