@@ -30,8 +30,8 @@
 
 .live-model__rates-wrap {
   display: grid;
-  grid-template-areas: "a b"
-    "c c";
+  grid-template-areas: "weight day"
+    "price price";
   justify-content: space-between;
   margin-top: 14.5px;
 }
@@ -67,15 +67,31 @@
   width: 77px;
   text-align: center;
   font-family: $ff-default;
-  font-size: $fz-default;
+  font-size: 12px;
   color: $color-font;
   line-height: 12px;
   text-transform: lowercase;
 }
 
+.live-modal__price-wrap {
+  grid-area: price;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .live-model__price {
-  grid-area: c;
   margin: 20px 0 0;
+  color: $color-font-title;
+  font-family: $ff-title;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.live-model__price-total {
+  margin: 20px 0 0 5px;
   color: $color-font-title;
   font-family: $ff-title;
   font-size: 14px;
@@ -86,6 +102,7 @@
 
 .live-model__slider {
   position: relative;
+  display: flex;
 
   &::before {
     content: "";
@@ -110,9 +127,23 @@
   }
 }
 
+.live-model__before {
+  width: 140px;
+  height: 256px;
+}
+
+.live-model__after {
+  width: 140px;
+  height: 256px;
+}
+
 @media (min-width: $tablet-width) {
   .live-model-wrap {
     padding: 14px 30px 40px;
+  }
+
+  .live-model {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 56%, rgba(234, 234, 234, 1) 56%, rgba(234, 234, 234, 1) 100%);
   }
 
   .live-model__title {
@@ -129,9 +160,125 @@
     display: flex;
   }
 
+  .live-model__rates {
+    width: 162px;
+    margin-right: 43px;
+    gap: 11px;
+  }
+
+  .live-model__stats {
+    font-size: 30px;
+    line-height: 37px;
+
+    &::before {
+      width: 162px;
+      height: 77px;
+      background: url("../../img/svg/weight-back-large.svg") no-repeat;
+    }
+
+    &-modify::before {
+      content: "";
+      position: absolute;
+      width: 162px;
+      height: 77px;
+      background: url("../../img/svg/weight-back-modify.svg") no-repeat;
+    }
+  }
+
+  .live-model__description {
+    width: 162px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .live-modal__price-wrap {
+    flex-direction: column;
+  }
+
   .live-model__price {
+    width: 174px;
     margin: 0;
+    margin-left: auto;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  .live-model__price-total {
+    margin: 9px 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  .live-model__slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &::before {
+      left: 49.7%;
+      height: 100%;
+    }
+
+    &::after {
+      left: 47.2%;
+      top: 45%;
+    }
+  }
+
+  .live-model__before {
+    width: 280px;
+    height: 512px;
+  }
+
+  .live-model__after {
+    width: 280px;
+    height: 512px;
   }
 }
 
-// @media (min-width: $desktop-width)
+@media (min-width: $desktop-width) {
+  .live-model {
+    background: linear-gradient(180deg, white 0%, white 25%, #f2f2f2 25%, #f2f2f2 100%);
+  }
+
+  .live-model-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a d"
+      "b d"
+      "c d";
+  }
+
+  .live-model__title {
+    grid-area: a;
+    margin: 0;
+  }
+
+  .live-model__text {
+    grid-area: b;
+    margin: 0;
+  }
+
+  .live-model__rates-wrap {
+    grid-area: c;
+    display: grid;
+    max-width: 436px;
+    margin: 0;
+  }
+
+  .live-modal__price-wrap {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .live-model__price {
+    margin: 0;
+  }
+
+  .live-model__slider {
+    grid-area: d;
+  }
+}
