@@ -1,16 +1,33 @@
 .container {
+  position: relative;
+  width: 320px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
-}
-
-.container--column {
   flex-direction: column;
-  gap: 40px;
-}
-
-.container--small {
+  align-items: center;
   padding: 0 20px;
   justify-content: space-between;
+  gap: 40px;
+
+  &--row {
+    flex-direction: row;
+  }
+
+  &--gap {
+    gap: 0;
+  }
 }
 
+@media (min-width: $tablet-width) {
+  .container {
+    width: $tablet-width;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: $desktop-width;
+    padding: 0 110px;
+  }
+}

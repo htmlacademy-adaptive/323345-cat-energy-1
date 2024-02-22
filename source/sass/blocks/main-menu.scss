@@ -67,7 +67,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid$color-border-four;
+  background-color: $color-bg-basic;
+  border-top: 1px solid $color-border-four;
   list-style: none;
   z-index: 1;
 }
@@ -116,7 +117,9 @@
   .main-menu__list {
     position: inherit;
     display: flex;
+    justify-content: flex-end;
     flex-direction: row;
+    gap: 33px;
     border-top: none;
   }
 
@@ -128,6 +131,7 @@
   .main-menu__item {
     border-bottom: none;
     text-align: end;
+    width: auto;
   }
 }
 
@@ -141,6 +145,7 @@
     display: flex;
     flex-direction: row;
     border-top: none;
+    background-color: transparent;
   }
 
   .main-menu__link {
@@ -157,6 +162,5 @@
     border-bottom: none;
     text-align: end;
     width: fit-content;
-    margin-right: 33px;
   }
 }

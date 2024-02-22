@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .promo__title {
@@ -29,6 +30,7 @@
 }
 
 .promo__cat-img-wrap {
+  width: 320px;
   background: $color-bg-second;
   position: absolute;
   top: 0;

@@ -6,7 +6,7 @@
 .footer__nav {
   position: relative;
 
-  &--small::before {
+  &::before {
     content: "";
     position: absolute;
     top: -20px;
@@ -16,7 +16,7 @@
     background-color: $color-bg-four;
   }
 
-  &--small::after {
+  &::after {
     content: "";
     position: absolute;
     bottom: -20px;
@@ -147,3 +147,28 @@
     transition: $trans-100;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .footer__nav {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .footer__logo {
+    margin-right: 27px;
+  }
+
+  .footer__copyright {
+    width: fit-content;
+  }
+
+  .footer__copyright-link {
+    padding-right: 50px;
+  }
+}
+
