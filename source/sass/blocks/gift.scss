@@ -31,3 +31,55 @@
   text-align: center;
   color: $color-bg-basic;
 }
+
+@media (min-width: $tablet-width) {
+  .gift {
+    &__img-wrap {
+      height: 200px;
+      overflow: hidden;
+    }
+
+    &__img {
+      width: fill-available;
+      transform: translate(0, -43%);
+    }
+
+    &__icon {
+      top: 96px;
+      left: 91px;
+    }
+
+    &__text {
+      bottom: 89px;
+      left: 365px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    padding: 0;
+
+    &__img-wrap {
+      width: 245px;
+      height: 288px;
+    }
+
+    &__img {
+      width: 245px;
+      height: 288px;
+      object-fit: fill;
+      transform: none;
+    }
+
+    &__icon {
+      top: 53px;
+      left: 91px;
+    }
+
+    &__text {
+      bottom: 28px;
+      left: 49px;
+    }
+  }
+}

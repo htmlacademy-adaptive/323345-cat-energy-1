@@ -1,0 +1,76 @@
+.extra-card__name {
+  margin-top: 13px;
+  margin-bottom: 13px;
+  font-family: $ff-title;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-font-second;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.extra-card__info {
+  width: 100%;
+
+  th {
+    font-family: $ff-default;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: $color-font;
+  }
+
+  td {
+    text-align: end;
+    font-family: $ff-default;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: $color-font;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .extra-card {
+    &__name {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      tr {
+        display: flex;
+      }
+
+      th {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      td {
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: 49px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-card {
+    &__info {
+      th {
+        margin-right: 63px;
+      }
+
+      td {
+        margin-right: 40px;
+        margin-left: 49px;
+      }
+    }
+  }
+}

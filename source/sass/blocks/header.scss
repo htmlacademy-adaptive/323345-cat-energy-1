@@ -83,15 +83,15 @@
     flex: inherit;
   }
 
-  .header__wrap--form {
+  .header__wrap--second {
     position: relative;
   }
 
-  .header__wrap--form .main-menu__link {
+  .header__wrap--second .main-menu__link {
     color: $color-font-three;
   }
 
-  .header__wrap--form .main-menu__link--current {
+  .header__wrap--second .main-menu__link--current {
     border-bottom: 2px solid $color-bg-second;
   }
 }
