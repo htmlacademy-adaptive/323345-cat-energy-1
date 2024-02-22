@@ -74,11 +74,12 @@
   text-transform: lowercase;
 }
 
-.live-modal__price-wrap {
+.live-model__price-wrap {
   grid-area: price;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .live-model__price {
@@ -192,8 +193,9 @@
     line-height: 14px;
   }
 
-  .live-modal__price-wrap {
+  .live-model__price-wrap {
     flex-direction: column;
+    align-items: end;
   }
 
   .live-model__price {
@@ -271,7 +273,7 @@
     margin: 0;
   }
 
-  .live-modal__price-wrap {
+  .live-model__price-wrap {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;

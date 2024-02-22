@@ -90,6 +90,8 @@
     justify-content: end;
     display: flex;
     flex-direction: column;
+    padding: 0;
+    border-bottom: none;
   }
 
   .catalog__item-wrap {
