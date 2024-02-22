@@ -65,6 +65,7 @@
     border: none;
     margin: 0 auto;
     width: 1440px;
+    z-index: 1;
   }
 
   .header__wrap {
@@ -80,5 +81,17 @@
 
   .header__nav {
     flex: inherit;
+  }
+
+  .header__wrap--form {
+    position: relative;
+  }
+
+  .header__wrap--form .main-menu__link {
+    color: $color-font-three;
+  }
+
+  .header__wrap--form .main-menu__link--current {
+    border-bottom: 2px solid $color-bg-second;
   }
 }
