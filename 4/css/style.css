@@ -1186,11 +1186,12 @@ body {
   text-transform: lowercase;
 }
 
-.live-modal__price-wrap {
+.live-model__price-wrap {
   grid-area: price;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .live-model__price {
@@ -1300,8 +1301,9 @@ body {
     line-height: 14px;
   }
 
-  .live-modal__price-wrap {
+  .live-model__price-wrap {
     flex-direction: column;
+    align-items: end;
   }
 
   .live-model__price {
@@ -1374,7 +1376,7 @@ body {
     margin: 0;
   }
 
-  .live-modal__price-wrap {
+  .live-model__price-wrap {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -1679,7 +1681,7 @@ input[type=number]:focus {
     flex-direction: row;
     gap: 80px;
   }
-  .feedback--fullscreen .feedback_extra {
+  .feedback--fullscreen .feedback__extra {
     grid-template-columns: repeat(4, 1fr);
   }
   .feedback--fullscreen .form-feedback__note {
@@ -1906,6 +1908,8 @@ input[type=number]:focus {
     justify-content: end;
     display: flex;
     flex-direction: column;
+    padding: 0;
+    border-bottom: none;
   }
 
   .catalog__item-wrap {
