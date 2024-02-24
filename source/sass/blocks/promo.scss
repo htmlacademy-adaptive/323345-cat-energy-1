@@ -6,6 +6,10 @@
   width: 100%;
 }
 
+.promo__booklet {
+  max-width: 320px;
+}
+
 .promo__title {
   display: block;
   text-align: center;
@@ -30,15 +34,19 @@
 }
 
 .promo__cat-img-wrap {
-  width: 320px;
+  width: 100vw;
+  max-height: 410px;
   background: $color-bg-second;
   position: absolute;
   top: 0;
   z-index: -1;
+  overflow: hidden;
 }
 
 .promo__cat-img {
+  width: 100vw;
   opacity: 0.23;
+  object-fit: cover;
 }
 
 .promo__food-img {
@@ -110,8 +118,9 @@
   .promo__cat-img-wrap {
     display: block;
     grid-column: 2/3;
-    width: 720px;
+    width: 50vw;
     height: 694px;
+    max-height: 694px;
     overflow: hidden;
     background: linear-gradient(90deg, rgba(83, 82, 87, 0.24) 0%, rgba(83, 82, 87, 0.24) 24%, #68b738 24%, #68b738 100%), linear-gradient(270deg, rgba(104, 183, 56, 0) 0%, rgba(104, 183, 56, 0) 76%, rgba(104, 183, 56, 1) 76%, rgba(104, 183, 56, 1) 100%);
   }
@@ -119,7 +128,7 @@
   .promo__cat-img {
     width: 1040px;
     height: 694px;
-    transform: translateX(172.7px);
+    transform: translateX(12vw);
   }
 
   .promo__booklet {

@@ -105,11 +105,12 @@
 .live-model__slider {
   position: relative;
   display: flex;
+  justify-content: center;
 
   &::before {
     content: "";
     position: absolute;
-    left: 138px;
+    left: 50%;
     width: 4px;
     height: 256px;
     border-radius: 2px;
@@ -119,7 +120,7 @@
   &::after {
     content: "";
     position: absolute;
-    left: 120px;
+    left: calc(50% - 19px);
     top: 109px;
     width: 40px;
     height: 40px;

@@ -25,6 +25,7 @@
 }
 
 .how-work__text {
+  min-height: 60px;
   margin: 0;
   padding-left: 80px;
   font-family: $ff-default;
@@ -64,7 +65,7 @@
 
   .how-work__text {
     position: relative;
-    width: 230px;
+    min-width: 230px;
     height: 280px;
     padding-top: 151px;
     padding-left: 0;
@@ -150,7 +151,7 @@
 
   .how-work__text {
     position: relative;
-    width: 230px;
+    min-width: 230px;
     height: 280px;
     padding-top: 151px;
     padding-left: 0;

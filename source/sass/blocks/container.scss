@@ -1,6 +1,5 @@
 .container {
   position: relative;
-  width: 320px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -8,6 +7,7 @@
   padding: 0 20px;
   justify-content: space-between;
   gap: 40px;
+  width: 100%;
 
   &--gap {
     gap: 0;
@@ -16,7 +16,6 @@
 
 @media (min-width: $tablet-width) {
   .container {
-    width: $tablet-width;
     padding: 0 30px;
 
     &--row {
@@ -31,7 +30,6 @@
 
 @media (min-width: $desktop-width) {
   .container {
-    width: $desktop-width;
     padding: 0 110px;
   }
 }

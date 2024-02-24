@@ -8,10 +8,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
   margin: 10px auto;
 }
 
 .contacts__baner {
+  width: 140px;
   font-family: $ff-title;
   font-size: 16px;
   line-height: 20px;
@@ -20,11 +23,14 @@
 }
 
 .contacts__address {
+  width: 140px;
   font-family: $ff-default;
   color: $color-font;
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
+  text-align: end;
+  justify-self: end;
 }
 
 .contacts__img {
@@ -43,13 +49,13 @@
   }
 
   .contacts__baner {
-    max-width: 163px;
+    width: 163px;
     font-size: 20px;
     line-height: 26px;
   }
 
   .contacts__address {
-    max-width: 157px;
+    width: 157px;
     justify-self: end;
     font-size: 16px;
     text-align: end;
@@ -68,7 +74,7 @@
 
   .contacts__wrap {
     position: absolute;
-    left: 110px;
+    left: 8vw;
     top: 100px;
     padding: 60px 80px;
     width: 565px;
