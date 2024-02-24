@@ -34,7 +34,7 @@
 }
 
 .contacts__img {
-  width: 320px;
+  width: 100vw;
 }
 
 
@@ -62,19 +62,14 @@
   }
 
   .contacts__img {
-    width: 768px;
     height: 400px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .contacts {
-    position: relative;
-  }
-
   .contacts__wrap {
     position: absolute;
-    left: 8vw;
+    left: 110px;
     top: 100px;
     padding: 60px 80px;
     width: 565px;
@@ -84,10 +79,5 @@
 
   .contacts__baner {
     margin: 0;
-  }
-
-  .contacts__img {
-    width: 1400px;
-    height: 400px;
   }
 }

@@ -34,6 +34,7 @@
 }
 
 .promo__cat-img-wrap {
+  display: flex;
   width: 100vw;
   max-height: 410px;
   background: $color-bg-second;
