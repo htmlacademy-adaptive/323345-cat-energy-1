@@ -70,12 +70,30 @@
 }
 
 
-.main-menu:active .main-menu__toggle::before {
+.main-menu--opened .main-menu__toggle::before {
   display: none;
 }
 
-.main-menu:active .main-menu__toggle::after {
+.main-menu--opened .main-menu__toggle::after {
   display: block;
+}
+
+.main-menu--opened {
+  &:hover .main-menu__toggle::after {
+    opacity: 0.6;
+    transition: $trans-default;
+  }
+
+  &:active .main-menu__toggle::after {
+    opacity: 0.3;
+    transition: $trans-default;
+    z-index: 1;
+  }
+
+  &:focus-visible .main-menu__toggle::after {
+    outline: 2px solid $color-outline;
+    transition: $trans-100;
+  }
 }
 
 .main-nav--nojs:active .main-menu__list {

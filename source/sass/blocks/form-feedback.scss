@@ -13,6 +13,7 @@
     color: $color-bg-basic;
     background-color: $color-bg-second;
     border: none;
+    cursor: pointer;
 
     &:hover {
       background-color: $color-bg-button;

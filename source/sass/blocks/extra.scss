@@ -13,6 +13,11 @@
   padding: 6px 45px;
 }
 
+.extra__field[type="checkbox"]:disabled ~ .extra__text-mark,
+.extra__field[type="checkbox"]:disabled ~ .extra__control-label {
+  opacity: 0.3;
+}
+
 .extra__control-label {
   font-size: 16px;
   line-height: 18px;
@@ -26,6 +31,17 @@
   top: 3px;
   left: 0;
   border: 1px solid $color-border-second;
+  cursor: pointer;
+}
+
+.extra__field {
+  &:invalid {
+    border: 2px solid $color-form-invalid;
+  }
+
+  &:valid {
+    border: 2px solid $color-form-valid;
+  }
 }
 
 .extra__field[type="checkbox"]:checked + .extra__text-mark::before,

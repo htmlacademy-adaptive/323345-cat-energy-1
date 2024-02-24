@@ -63,11 +63,37 @@
   border: 1px solid $color-border-three;
 
   &--email {
-    background: url("../../img/svg/icon_email.svg") center right 12px no-repeat;
+    background: url("../../img/svg/icon-email.svg") center right 12px no-repeat;
+
+    &:focus,
+    &:valid {
+      background: url("../../img/svg/icon-email-green.svg") center right 12px no-repeat;
+    }
+
+    &:invalid {
+      background: url("../../img/svg/icon-email-error.svg") center right 12px no-repeat;
+    }
   }
 
   &--phone {
     background: url("../../img/svg/icon-phone.svg") center right 12px no-repeat;
+
+    &:focus,
+    &:valid {
+      background: url("../../img/svg/icon-phone-green.svg") center right 12px no-repeat;
+    }
+
+    &:invalid {
+      background: url("../../img/svg/icon-phone-error.svg") center right 12px no-repeat;
+    }
+  }
+
+  &:invalid {
+    border: 2px solid $color-form-invalid;
+  }
+
+  &:valid {
+    border: 2px solid $color-form-valid;
   }
 }
 
@@ -85,6 +111,7 @@
   height: 30px;
   border: 1px solid $color-border-second;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .feedback__field[type="radio"]:checked + .feedback__color-mark::before {
