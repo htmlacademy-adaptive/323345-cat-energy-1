@@ -6,7 +6,7 @@
 
 .contacts__wrap {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -14,7 +14,7 @@
 }
 
 .contacts__baner {
-  width: 140px;
+  max-width: 140px;
   font-family: $ff-title;
   font-size: 16px;
   line-height: 20px;
@@ -23,7 +23,7 @@
 }
 
 .contacts__address {
-  width: 140px;
+  max-width: 140px;
   font-family: $ff-default;
   color: $color-font;
   font-size: 14px;
@@ -50,13 +50,13 @@
   }
 
   .contacts__baner {
-    width: 163px;
+    max-width: 163px;
     font-size: 20px;
     line-height: 26px;
   }
 
   .contacts__address {
-    width: 157px;
+    max-width: 157px;
     justify-self: end;
     font-size: 16px;
     text-align: end;

@@ -70,7 +70,7 @@
       background: url("../../img/svg/icon-email-green.svg") center right 12px no-repeat;
     }
 
-    &:invalid {
+    &:not(:focus):not(:placeholder-shown):invalid {
       background: url("../../img/svg/icon-email-error.svg") center right 12px no-repeat;
     }
   }
@@ -83,17 +83,17 @@
       background: url("../../img/svg/icon-phone-green.svg") center right 12px no-repeat;
     }
 
-    &:invalid {
+    &:not(:focus):not(:placeholder-shown):invalid {
       background: url("../../img/svg/icon-phone-error.svg") center right 12px no-repeat;
     }
   }
 
-  &:invalid {
-    border: 2px solid $color-form-invalid;
-  }
-
   &:valid {
     border: 2px solid $color-form-valid;
+  }
+
+  &:not(:focus):not(:placeholder-shown):invalid {
+    border: 2px solid $color-form-invalid;
   }
 }
 
@@ -126,6 +126,7 @@
 }
 
 .feedback__title {
+  position: relative;
   margin: 19px 0;
   text-align: start;
   font-family: $ff-title;
@@ -134,6 +135,30 @@
   line-height: 26px;
   color: $color-font-title;
   text-transform: none;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 59%;
+    left: calc(100% + 20px);
+    width: 100vw;
+    height: 2px;
+    background-color: $color-bg-second;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 59%;
+    right: calc(100% + 40px);
+    width: 100vw;
+    height: 2px;
+    background-color: $color-bg-second;
+    z-index: -1;
+    display: none;
+  }
 }
 
 // убираем стрелки поля imput(number)
@@ -199,6 +224,14 @@ input[type="number"]:focus {
   .feedback__title {
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      left: calc(100% + 40px);
+    }
+
+    &::after {
+      display: block;
+    }
   }
 
   .feedback__area {

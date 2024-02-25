@@ -58,7 +58,7 @@
 @media (min-width: $tablet-width) {
   .extra {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
 
     &__lable {
       padding: 6px 0 6px 45px;

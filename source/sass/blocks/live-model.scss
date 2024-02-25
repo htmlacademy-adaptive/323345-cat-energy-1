@@ -245,12 +245,12 @@
 
 @media (min-width: $desktop-width) {
   .live-model {
-    background: linear-gradient(180deg, #ffffff 0%, #ffffff 25%, #f2f2f2 25%, #f2f2f2 100%);
+    background: linear-gradient(180deg, $color-bg-basic 0%, $color-bg-basic 25%, $color-bg-three 25%, $color-bg-three 100%);
   }
 
   .live-model-wrap {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "a d"
       "b d"
       "c d";
