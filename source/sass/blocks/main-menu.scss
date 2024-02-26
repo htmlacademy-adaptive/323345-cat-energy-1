@@ -44,33 +44,60 @@
   transition: $trans-default;
 }
 
-.main-menu:active .main-menu__toggle::before {
-  display: none;
-}
-
-.main-menu:active .main-menu__toggle::after {
-  display: block;
-}
-
-.main-menu:active .main-menu__list {
-  display: flex;
-}
-
 .main-menu__list {
   position: absolute;
   left: 0;
   top: 66px;
-  width: 320px;
-  padding: 0;
+  width: 100%;
   margin: 0 auto;
-  display: none;
+  padding: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid$color-border-four;
-  background-color: #ffffff;
+  flex-wrap: wrap;
+  background-color: $color-bg-basic;
+  border-top: 1px solid $color-border-four;
   list-style: none;
   z-index: 1;
+}
+
+.main-menu--closed .main-menu__list {
+  display: none;
+}
+
+.main-menu--opened .main-menu__list {
+  display: flex;
+}
+
+
+.main-menu--opened .main-menu__toggle::before {
+  display: none;
+}
+
+.main-menu--opened .main-menu__toggle::after {
+  display: block;
+}
+
+.main-menu--opened {
+  &:hover .main-menu__toggle::after {
+    opacity: 0.6;
+    transition: $trans-default;
+  }
+
+  &:active .main-menu__toggle::after {
+    opacity: 0.3;
+    transition: $trans-default;
+    z-index: 1;
+  }
+
+  &:focus-visible .main-menu__toggle::after {
+    outline: 2px solid $color-outline;
+    transition: $trans-100;
+  }
+}
+
+.main-menu--nojs:active .main-menu__list {
+  display: flex;
 }
 
 .main-menu__link {
@@ -107,4 +134,51 @@
   width: 100%;
   border-bottom: 1px solid $color-border-four;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-menu__toggle {
+    display: none;
+  }
+
+  .main-menu--closed .main-menu__list {
+    display: flex;
+  }
+
+  .main-menu__list {
+    position: inherit;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 33px;
+    background-color: transparent;
+    border-top: none;
+  }
+
+  .main-menu__link {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .main-menu__item {
+    border-bottom: none;
+    text-align: end;
+    width: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-menu__link {
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-bg-basic;
+
+    &--current {
+      border-bottom: 2px solid $color-border;
+    }
+  }
+
+  .main-menu__item {
+    width: fit-content;
+  }
 }

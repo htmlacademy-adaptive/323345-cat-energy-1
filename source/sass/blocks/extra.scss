@@ -13,6 +13,16 @@
   padding: 6px 45px;
 }
 
+.extra__field[type="checkbox"]:disabled ~ .extra__text-mark,
+.extra__field[type="checkbox"]:disabled ~ .extra__control-label {
+  opacity: 0.3;
+}
+
+.extra__control-label {
+  font-size: 16px;
+  line-height: 18px;
+}
+
 .extra__text-mark {
   content: "";
   position: absolute;
@@ -21,6 +31,17 @@
   top: 3px;
   left: 0;
   border: 1px solid $color-border-second;
+  cursor: pointer;
+}
+
+.extra__field {
+  &:invalid {
+    border: 2px solid $color-form-invalid;
+  }
+
+  &:valid {
+    border: 2px solid $color-form-valid;
+  }
 }
 
 .extra__field[type="checkbox"]:checked + .extra__text-mark::before,
@@ -32,4 +53,27 @@
   width: 26px;
   height: 26px;
   background: url("../../img/svg/icon-ok.svg") center center no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .extra {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__lable {
+      padding: 6px 0 6px 45px;
+    }
+  }
+
+  .extra__control-label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra {
+    justify-items: start;
+    gap: 120px;
+  }
 }

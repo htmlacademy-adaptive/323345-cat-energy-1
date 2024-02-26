@@ -1,7 +1,7 @@
 // Стили Каталога
 
-.catalog__card {
-  margin-bottom: 2px;
+.catalog__cards {
+  width: 100%;
 }
 
 .catalog__title {
@@ -17,12 +17,31 @@
   list-style-type: none;
   padding: 16px 0;
   margin: 0;
-  border-top: 1px solid $color-border;
 }
 
 .catalog__item {
   padding: 20px 20px 25px;
-  border-bottom: 1px solid $color-border;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: $color-border;
+  }
+
+  &:first-child::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: $color-border;
+  }
 }
 
 .catalog__button {
@@ -57,5 +76,71 @@
   &:focus-visible {
     outline: 2px solid $color-outline;
     transition: $trans-100;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+  }
+
+  .catalog__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    border-top: none;
+  }
+
+  .catalog__item {
+    padding: 30px 37px 40px;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .catalog__item:not(:last-child) {
+    background: linear-gradient(180deg, $color-bg-basic 0%, $color-bg-basic 28%, $color-bg-three 28%, $color-bg-three 100%);
+  }
+
+  .catalog__button {
+    margin-top: 32px;
+  }
+
+  .catalog__item--more {
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .catalog__item-wrap {
+    height: 429px;
+    border: 2px solid $color-bg-three;
+    padding: 50px 37px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__title {
+    margin-top: 74px;
+  }
+
+  .catalog__list {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 33px;
+    padding: 0;
+    column-gap: 80px;
   }
 }

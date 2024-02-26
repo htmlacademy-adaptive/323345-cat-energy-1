@@ -23,6 +23,9 @@ $color-logo-hover:   #3e3e3e;
 $color-logo-active:  #6b6b6b;
 $color-social:       #666666;
 
+$color-form-invalid: #ff8282;
+$color-form-valid:   #68b738;
+
 // Typography
 
 $ff-default:         "Lato", sans-serif;
@@ -39,3 +42,9 @@ $fz-title:           36px;
 $tf-default:         ease;
 $trans-default:      0.3s $tf-default;
 $trans-100:          0.13s $tf-default;
+
+
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1440px;

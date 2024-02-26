@@ -1,5 +1,5 @@
-.how-work--small {
-  padding: 0 20px;
+.how-work {
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -25,26 +25,201 @@
 }
 
 .how-work__text {
+  min-height: 60px;
   margin: 0;
   padding-left: 80px;
   font-family: $ff-default;
   font-size: $fz-default;
   color: $color-font;
   line-height: $lh-default;
+
+  &--leaf {
+    background: url("../../img/svg/icon-leaf.svg") left center no-repeat;
+  }
+
+  &--hot-water {
+    background: url("../../img/svg/icon-hot-water.svg") left center no-repeat;
+  }
+
+  &--eat {
+    background: url("../../img/svg/icon-eat.svg") left center no-repeat;
+  }
+
+  &--scale {
+    background: url("../../img/svg/icon-scale.svg") left center no-repeat;
+  }
 }
 
-.how-work__text--leaf {
-  background: url("../../img/svg/icon-leaf.svg") left center no-repeat;
+
+@media (min-width: $tablet-width) {
+  .how-work__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .how-work__block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 137px;
+  }
+
+  .how-work__text {
+    position: relative;
+    min-width: 230px;
+    height: 280px;
+    padding-top: 151px;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+
+    &--leaf {
+      background: url("../../img/svg/icon-leaf-large.svg") left top 40px no-repeat;
+
+      &::after {
+        position: absolute;
+        content: "1";
+        top: 0;
+        right: 21px;
+        font-family: $ff-title;
+        font-size: 280px;
+        line-height: 280px;
+        color: $color-bg-three;
+        z-index: -1;
+      }
+    }
+
+    &--hot-water {
+      background: url("../../img/svg/icon-hot-water-large.svg") left top 40px no-repeat;
+
+      &::after {
+        position: absolute;
+        content: "2";
+        top: 0;
+        right: 0;
+        font-family: $ff-title;
+        font-size: 280px;
+        line-height: 280px;
+        color: $color-bg-three;
+        z-index: -1;
+      }
+    }
+
+    &--eat {
+      background: url("../../img/svg/icon-eat-large.svg") left top 40px no-repeat;
+
+      &::after {
+        position: absolute;
+        content: "3";
+        top: 0;
+        right: -2px;
+        font-family: $ff-title;
+        font-size: 280px;
+        line-height: 280px;
+        color: $color-bg-three;
+        z-index: -1;
+      }
+    }
+
+    &--scale {
+      background: url("../../img/svg/icon-scale-large.svg") left top 40px no-repeat;
+
+      &::after {
+        position: absolute;
+        content: "4";
+        top: 0;
+        right: -13px;
+        font-family: $ff-title;
+        font-size: 280px;
+        line-height: 280px;
+        color: $color-bg-three;
+        z-index: -1;
+      }
+    }
+  }
 }
 
-.how-work__text--hot-water {
-  background: url("../../img/svg/icon-hot-water.svg") left center no-repeat;
-}
+@media (min-width: $desktop-width) {
+  .how-work__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
 
-.how-work__text--eat {
-  background: url("../../img/svg/icon-eat.svg") left center no-repeat;
-}
+  .how-work__block {
+    display: flex;
+    flex-direction: row;
+  }
 
-.how-work__text--scale {
-  background: url("../../img/svg/icon-scale.svg") left center no-repeat;
+  .how-work__text {
+    position: relative;
+    min-width: 230px;
+    height: 280px;
+    padding-top: 151px;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+
+    &--leaf {
+      background: url("../../img/svg/icon-leaf-large.svg") left top 40px no-repeat;
+
+      &::after {
+        position: absolute;
+        content: "1";
+        top: 0;
+        right: 21px;
+        font-family: $ff-title;
+        font-size: 280px;
+        line-height: 280px;
+        color: $color-bg-three;
+        z-index: -1;
+      }
+    }
+
+    &--hot-water {
+      background: url("../../img/svg/icon-hot-water-large.svg") left top 40px no-repeat;
+
+      &::after {
+        position: absolute;
+        content: "2";
+        top: 0;
+        right: 0;
+        font-family: $ff-title;
+        font-size: 280px;
+        line-height: 280px;
+        color: $color-bg-three;
+        z-index: -1;
+      }
+    }
+
+    &--eat {
+      background: url("../../img/svg/icon-eat-large.svg") left top 40px no-repeat;
+
+      &::after {
+        position: absolute;
+        content: "3";
+        top: 0;
+        right: -2px;
+        font-family: $ff-title;
+        font-size: 280px;
+        line-height: 280px;
+        color: $color-bg-three;
+        z-index: -1;
+      }
+    }
+
+    &--scale {
+      background: url("../../img/svg/icon-scale-large.svg") left top 40px no-repeat;
+
+      &::after {
+        position: absolute;
+        content: "4";
+        top: 0;
+        right: -13px;
+        font-family: $ff-title;
+        font-size: 280px;
+        line-height: 280px;
+        color: $color-bg-three;
+        z-index: -1;
+      }
+    }
+  }
 }
