@@ -36,7 +36,6 @@
 
 .promo__cat-img-wrap {
   display: flex;
-  max-height: 410px;
   background: $color-bg-second;
   position: absolute;
   top: 0;
@@ -46,6 +45,7 @@
 .promo__cat-img {
   display: block;
   opacity: 0.23;
+  object-fit: cover;
 }
 
 .promo__food-img {
