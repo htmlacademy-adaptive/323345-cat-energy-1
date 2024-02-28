@@ -456,8 +456,8 @@ body {
   width: 31px;
   height: 23px;
   background-color: #666666;
-  -webkit-mask-image: url("../../img/svg/vkontakte.svg");
-          mask-image: url("../../img/svg/vkontakte.svg");
+  -webkit-mask-image: url("../img/svg/vkontakte.svg");
+          mask-image: url("../img/svg/vkontakte.svg");
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -468,8 +468,8 @@ body {
   width: 31px;
   height: 23px;
   background-color: #666666;
-  -webkit-mask-image: url("../../img/svg/youtube.svg");
-          mask-image: url("../../img/svg/youtube.svg");
+  -webkit-mask-image: url("../img/svg/youtube.svg");
+          mask-image: url("../img/svg/youtube.svg");
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -480,8 +480,8 @@ body {
   width: 38px;
   height: 23px;
   background-color: #666666;
-  -webkit-mask-image: url("../../img/svg/telegram.svg");
-          mask-image: url("../../img/svg/telegram.svg");
+  -webkit-mask-image: url("../img/svg/telegram.svg");
+          mask-image: url("../img/svg/telegram.svg");
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -792,7 +792,7 @@ body {
   top: 35px;
   width: 36px;
   height: 50px;
-  background: url("../../img/svg/icon-slim-cat.svg") center left no-repeat;
+  background: url("../img/svg/icon-slim-cat.svg") center left no-repeat;
 }
 .diet__title--pro::after {
   content: "";
@@ -801,7 +801,7 @@ body {
   top: 49px;
   width: 67px;
   height: 28px;
-  background: url("../../img/svg/icon-pro-cat.svg") center left no-repeat;
+  background: url("../img/svg/icon-pro-cat.svg") center left no-repeat;
 }
 
 .diet__text {
@@ -1029,7 +1029,7 @@ body {
     line-height: 24px;
   }
   .how-work__text--leaf {
-    background: url("../../img/svg/icon-leaf-large.svg") left top 40px no-repeat;
+    background: url("../img/svg/icon-leaf-large.svg") left top 40px no-repeat;
   }
   .how-work__text--leaf::after {
     position: absolute;
@@ -1043,7 +1043,7 @@ body {
     z-index: -1;
   }
   .how-work__text--hot-water {
-    background: url("../../img/svg/icon-hot-water-large.svg") left top 40px no-repeat;
+    background: url("../img/svg/icon-hot-water-large.svg") left top 40px no-repeat;
   }
   .how-work__text--hot-water::after {
     position: absolute;
@@ -1057,7 +1057,7 @@ body {
     z-index: -1;
   }
   .how-work__text--eat {
-    background: url("../../img/svg/icon-eat-large.svg") left top 40px no-repeat;
+    background: url("../img/svg/icon-eat-large.svg") left top 40px no-repeat;
   }
   .how-work__text--eat::after {
     position: absolute;
@@ -1071,7 +1071,7 @@ body {
     z-index: -1;
   }
   .how-work__text--scale {
-    background: url("../../img/svg/icon-scale-large.svg") left top 40px no-repeat;
+    background: url("../img/svg/icon-scale-large.svg") left top 40px no-repeat;
   }
   .how-work__text--scale::after {
     position: absolute;
@@ -1106,7 +1106,7 @@ body {
     line-height: 24px;
   }
   .how-work__text--leaf {
-    background: url("../../img/svg/icon-leaf-large.svg") left top 40px no-repeat;
+    background: url("../img/svg/icon-leaf-large.svg") left top 40px no-repeat;
   }
   .how-work__text--leaf::after {
     position: absolute;
@@ -1120,7 +1120,7 @@ body {
     z-index: -1;
   }
   .how-work__text--hot-water {
-    background: url("../../img/svg/icon-hot-water-large.svg") left top 40px no-repeat;
+    background: url("../img/svg/icon-hot-water-large.svg") left top 40px no-repeat;
   }
   .how-work__text--hot-water::after {
     position: absolute;
@@ -1134,7 +1134,7 @@ body {
     z-index: -1;
   }
   .how-work__text--eat {
-    background: url("../../img/svg/icon-eat-large.svg") left top 40px no-repeat;
+    background: url("../img/svg/icon-eat-large.svg") left top 40px no-repeat;
   }
   .how-work__text--eat::after {
     position: absolute;
@@ -1148,7 +1148,7 @@ body {
     z-index: -1;
   }
   .how-work__text--scale {
-    background: url("../../img/svg/icon-scale-large.svg") left top 40px no-repeat;
+    background: url("../img/svg/icon-scale-large.svg") left top 40px no-repeat;
   }
   .how-work__text--scale::after {
     position: absolute;
@@ -1274,7 +1274,7 @@ body {
   position: absolute;
   left: 50%;
   width: 4px;
-  height: 256px;
+  height: 100%;
   border-radius: 2px;
   background-color: #666666;
 }
@@ -1282,12 +1282,12 @@ body {
   content: "";
   position: absolute;
   left: calc(50% - 19px);
-  top: 109px;
+  top: calc(50% - 19px);
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: 4px solid #666666;
-  background: url("../../img/svg/dabl-arrow.svg") center center no-repeat #ffffff;
+  background: url("../img/svg/dabl-arrow.svg") center center no-repeat #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -1326,14 +1326,14 @@ body {
   .live-model__stats::before {
     width: 162px;
     height: 77px;
-    background: url("../../img/svg/weight-back-large.svg") no-repeat;
+    background: url("../img/svg/weight-back-large.svg") no-repeat;
   }
   .live-model__stats-modify::before {
     content: "";
     position: absolute;
     width: 162px;
     height: 77px;
-    background: url("../../img/svg/weight-back-modify.svg") no-repeat;
+    background: url("../img/svg/weight-back-modify.svg") no-repeat;
   }
 
   .live-model__description {
@@ -1368,14 +1368,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-  }
-  .live-model__slider::before {
-    left: 49.7%;
-    height: 100%;
-  }
-  .live-model__slider::after {
-    left: 47.2%;
-    top: 45%;
   }
 
   .live-model__before {
@@ -1587,22 +1579,22 @@ body {
   border: 1px solid #e7e7e7;
 }
 .feedback__field--email {
-  background: url("../../img/svg/icon-email.svg") center right 12px no-repeat;
+  background: url("../img/svg/icon-email.svg") center right 12px no-repeat;
 }
 .feedback__field--email:focus, .feedback__field--email:valid {
-  background: url("../../img/svg/icon-email-green.svg") center right 12px no-repeat;
+  background: url("../img/svg/icon-email-green.svg") center right 12px no-repeat;
 }
 .feedback__field--email:not(:focus):not(:placeholder-shown):invalid {
-  background: url("../../img/svg/icon-email-error.svg") center right 12px no-repeat;
+  background: url("../img/svg/icon-email-error.svg") center right 12px no-repeat;
 }
 .feedback__field--phone {
-  background: url("../../img/svg/icon-phone.svg") center right 12px no-repeat;
+  background: url("../img/svg/icon-phone.svg") center right 12px no-repeat;
 }
 .feedback__field--phone:focus, .feedback__field--phone:valid {
-  background: url("../../img/svg/icon-phone-green.svg") center right 12px no-repeat;
+  background: url("../img/svg/icon-phone-green.svg") center right 12px no-repeat;
 }
 .feedback__field--phone:not(:focus):not(:placeholder-shown):invalid {
-  background: url("../../img/svg/icon-phone-error.svg") center right 12px no-repeat;
+  background: url("../img/svg/icon-phone-error.svg") center right 12px no-repeat;
 }
 .feedback__field:valid {
   border: 2px solid #68b738;
@@ -2106,7 +2098,7 @@ input[type=number]:focus {
   margin-bottom: 23px;
   width: 30px;
   height: 30px;
-  background: url("../../img/svg/icon-plus.svg") center center no-repeat;
+  background: url("../img/svg/icon-plus.svg") center center no-repeat;
 }
 
 .card__add-title {
@@ -2168,7 +2160,7 @@ input[type=number]:focus {
   .card__add-img {
     width: 60px;
     height: 60px;
-    background: url("../../img/svg/icon-plus-large.svg") center center no-repeat;
+    background: url("../img/svg/icon-plus-large.svg") center center no-repeat;
     margin-bottom: 50px;
   }
   .card__add-title {
