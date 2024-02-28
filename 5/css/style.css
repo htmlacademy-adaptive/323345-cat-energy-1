@@ -84,6 +84,11 @@ body {
   gap: 40px;
 }
 
+.header__logotype,
+.header__logotype-text {
+  display: block;
+}
+
 .header__nav {
   text-align: end;
 }
@@ -202,7 +207,7 @@ body {
   width: 24px;
   height: 24px;
   display: none;
-  background: url("../../img/svg/burger-open.svg") center center no-repeat;
+  background: url("../img/svg/burger-open.svg") center center no-repeat;
   transition: 0.3s ease;
 }
 .main-menu__toggle:focus-visible {
@@ -579,16 +584,34 @@ body {
 }
 
 .promo__cat-img-wrap {
-  display: flex;
-  background: #68b738;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background: #68b738;
   top: 0;
   z-index: -1;
+}
+.promo__cat-img-wrap::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: calc(50% - 160px);
+  height: 100%;
+  background-color: rgba(83, 82, 87, 0.4);
+}
+.promo__cat-img-wrap::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: calc(50% - 160px);
+  height: 100%;
+  background-color: rgba(83, 82, 87, 0.34);
 }
 
 .promo__cat-img {
   display: block;
-  opacity: 0.23;
+  opacity: 0.33;
   object-fit: cover;
 }
 
@@ -598,7 +621,7 @@ body {
 
 .promo__button {
   padding: 10px 44px;
-  width: 280px;
+  width: 100%;
   background-color: #68b738;
 }
 
@@ -670,11 +693,15 @@ body {
     overflow: hidden;
     background: linear-gradient(90deg, rgba(83, 82, 87, 0.24) 0%, rgba(83, 82, 87, 0.24) 24%, #68b738 24%, #68b738 100%), linear-gradient(270deg, rgba(104, 183, 56, 0) 0%, rgba(104, 183, 56, 0) 76%, #68b738 76%, #68b738 100%);
   }
+  .promo__cat-img-wrap::before, .promo__cat-img-wrap::after {
+    display: none;
+  }
 
   .promo__cat-img {
     width: 1040px;
     height: 694px;
     transform: translateX(12vw);
+    opacity: 0.23;
   }
 
   .promo__booklet {
@@ -986,6 +1013,8 @@ body {
 }
 
 .how-work__text {
+  display: flex;
+  align-items: center;
   min-height: 60px;
   margin: 0;
   padding-left: 80px;
@@ -1676,8 +1705,6 @@ input[type=number]:hover,
 input[type=number]:focus {
   -webkit-appearance: none;
           appearance: none;
-  -webkit-appearance: textfield;
-          appearance: textfield;
 }
 
 .feedback__area {
@@ -2051,7 +2078,8 @@ input[type=number]:focus {
   }
 }
 .card {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
 .card--more {
@@ -2066,8 +2094,8 @@ input[type=number]:focus {
   justify-content: space-between;
 }
 
-.card__img {
-  margin: 10px 36px;
+.card__img-wrap {
+  text-align: center;
 }
 
 .card__info {
@@ -2121,6 +2149,7 @@ input[type=number]:focus {
 
 @media (min-width: 768px) {
   .card {
+    display: flex;
     flex-direction: column;
   }
   .card--more {
@@ -2129,7 +2158,6 @@ input[type=number]:focus {
   .card__img {
     width: 200px;
     height: 210px;
-    margin: 10px 36px 22px;
   }
   .card__name {
     margin: 0 auto;
