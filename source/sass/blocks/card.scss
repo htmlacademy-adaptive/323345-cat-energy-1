@@ -1,5 +1,6 @@
 .card {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
 
   &--more {
@@ -15,9 +16,13 @@
   justify-content: space-between;
 }
 
-.card__img {
-  margin: 10px 36px;
+.card__img-wrap {
+  text-align: center;
 }
+
+// .card__img {
+//   margin: 10px 36px;
+// }
 
 .card__info {
   width: 100%;
@@ -72,6 +77,7 @@
 
 @media (min-width: $tablet-width) {
   .card {
+    display: flex;
     flex-direction: column;
 
     &--more {
@@ -81,7 +87,6 @@
     &__img {
       width: 200px;
       height: 210px;
-      margin: 10px 36px 22px;
     }
 
     &__name {

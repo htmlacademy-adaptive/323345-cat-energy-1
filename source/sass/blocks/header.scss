@@ -13,6 +13,11 @@
   gap: 40px;
 }
 
+.header__logotype,
+.header__logotype-text {
+  display: block;
+}
+
 .header__nav {
   text-align: end;
 }

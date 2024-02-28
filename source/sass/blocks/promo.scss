@@ -35,16 +35,36 @@
 }
 
 .promo__cat-img-wrap {
-  display: flex;
-  background: $color-bg-second;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background: $color-bg-second;
   top: 0;
   z-index: -1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: calc(50% - 160px);
+    height: 100%;
+    background-color: rgba(83, 82, 87, 0.4);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: calc(50% - 160px);
+    height: 100%;
+    background-color: rgba(83, 82, 87, 0.34);
+  }
 }
 
 .promo__cat-img {
   display: block;
-  opacity: 0.23;
+  opacity: 0.33;
   object-fit: cover;
 }
 
@@ -54,7 +74,7 @@
 
 .promo__button {
   padding: 10px 44px;
-  width: 280px;
+  width: 100%;
   background-color: $color-bg-second;
 }
 
@@ -126,12 +146,18 @@
     max-height: 694px;
     overflow: hidden;
     background: linear-gradient(90deg, rgba(83, 82, 87, 0.24) 0%, rgba(83, 82, 87, 0.24) 24%, #68b738 24%, #68b738 100%), linear-gradient(270deg, rgba(104, 183, 56, 0) 0%, rgba(104, 183, 56, 0) 76%, rgb(104, 183, 56) 76%, rgb(104, 183, 56) 100%);
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 
   .promo__cat-img {
     width: 1040px;
     height: 694px;
     transform: translateX(12vw);
+    opacity: 0.23;
   }
 
   .promo__booklet {
