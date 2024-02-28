@@ -995,16 +995,16 @@ body {
   line-height: 18px;
 }
 .how-work__text--leaf {
-  background: url("../../img/svg/icon-leaf.svg") left center no-repeat;
+  background: url("../img/svg/icon-leaf.svg") left center no-repeat;
 }
 .how-work__text--hot-water {
-  background: url("../../img/svg/icon-hot-water.svg") left center no-repeat;
+  background: url("../img/svg/icon-hot-water.svg") left center no-repeat;
 }
 .how-work__text--eat {
-  background: url("../../img/svg/icon-eat.svg") left center no-repeat;
+  background: url("../img/svg/icon-eat.svg") left center no-repeat;
 }
 .how-work__text--scale {
-  background: url("../../img/svg/icon-scale.svg") left center no-repeat;
+  background: url("../img/svg/icon-scale.svg") left center no-repeat;
 }
 
 @media (min-width: 768px) {
