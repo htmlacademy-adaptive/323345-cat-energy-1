@@ -25,6 +25,8 @@
 }
 
 .how-work__text {
+  display: flex;
+  align-items: center;
   min-height: 60px;
   margin: 0;
   padding-left: 80px;
@@ -34,19 +36,19 @@
   line-height: $lh-default;
 
   &--leaf {
-    background: url("../../img/svg/icon-leaf.svg") left center no-repeat;
+    background: url("../img/svg/icon-leaf.svg") left center no-repeat;
   }
 
   &--hot-water {
-    background: url("../../img/svg/icon-hot-water.svg") left center no-repeat;
+    background: url("../img/svg/icon-hot-water.svg") left center no-repeat;
   }
 
   &--eat {
-    background: url("../../img/svg/icon-eat.svg") left center no-repeat;
+    background: url("../img/svg/icon-eat.svg") left center no-repeat;
   }
 
   &--scale {
-    background: url("../../img/svg/icon-scale.svg") left center no-repeat;
+    background: url("../img/svg/icon-scale.svg") left center no-repeat;
   }
 }
 
@@ -73,7 +75,7 @@
     line-height: 24px;
 
     &--leaf {
-      background: url("../../img/svg/icon-leaf-large.svg") left top 40px no-repeat;
+      background: url("../img/svg/icon-leaf-large.svg") left top 40px no-repeat;
 
       &::after {
         position: absolute;
@@ -89,7 +91,7 @@
     }
 
     &--hot-water {
-      background: url("../../img/svg/icon-hot-water-large.svg") left top 40px no-repeat;
+      background: url("../img/svg/icon-hot-water-large.svg") left top 40px no-repeat;
 
       &::after {
         position: absolute;
@@ -105,7 +107,7 @@
     }
 
     &--eat {
-      background: url("../../img/svg/icon-eat-large.svg") left top 40px no-repeat;
+      background: url("../img/svg/icon-eat-large.svg") left top 40px no-repeat;
 
       &::after {
         position: absolute;
@@ -121,7 +123,7 @@
     }
 
     &--scale {
-      background: url("../../img/svg/icon-scale-large.svg") left top 40px no-repeat;
+      background: url("../img/svg/icon-scale-large.svg") left top 40px no-repeat;
 
       &::after {
         position: absolute;
@@ -159,7 +161,7 @@
     line-height: 24px;
 
     &--leaf {
-      background: url("../../img/svg/icon-leaf-large.svg") left top 40px no-repeat;
+      background: url("../img/svg/icon-leaf-large.svg") left top 40px no-repeat;
 
       &::after {
         position: absolute;
@@ -175,7 +177,7 @@
     }
 
     &--hot-water {
-      background: url("../../img/svg/icon-hot-water-large.svg") left top 40px no-repeat;
+      background: url("../img/svg/icon-hot-water-large.svg") left top 40px no-repeat;
 
       &::after {
         position: absolute;
@@ -191,7 +193,7 @@
     }
 
     &--eat {
-      background: url("../../img/svg/icon-eat-large.svg") left top 40px no-repeat;
+      background: url("../img/svg/icon-eat-large.svg") left top 40px no-repeat;
 
       &::after {
         position: absolute;
@@ -207,7 +209,7 @@
     }
 
     &--scale {
-      background: url("../../img/svg/icon-scale-large.svg") left top 40px no-repeat;
+      background: url("../img/svg/icon-scale-large.svg") left top 40px no-repeat;
 
       &::after {
         position: absolute;

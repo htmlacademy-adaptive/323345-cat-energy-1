@@ -1,4 +1,5 @@
 .header {
+  width: 100%;
   border-bottom: 1px solid $color-bg-four;
 }
 
@@ -10,6 +11,11 @@
   padding: 0 20px;
   justify-content: space-between;
   gap: 40px;
+}
+
+.header__logotype,
+.header__logotype-text {
+  display: block;
 }
 
 .header__nav {
@@ -54,6 +60,11 @@
   .header__logo {
     width: 174px;
   }
+
+  .hedaer__logotype {
+    width: 60px;
+    height: 50px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -73,6 +84,16 @@
 
   .header__logo {
     width: 202px;
+  }
+
+  .hedaer__logotype {
+    width: 70px;
+    height: 59px;
+  }
+
+  .hedaer__logotype-text {
+    width: 118px;
+    height: 21px;
   }
 
   .header__nav {

@@ -63,28 +63,28 @@
   border: 1px solid $color-border-three;
 
   &--email {
-    background: url("../../img/svg/icon-email.svg") center right 12px no-repeat;
+    background: url("../img/svg/icon-email.svg") center right 12px no-repeat;
 
     &:focus,
     &:valid {
-      background: url("../../img/svg/icon-email-green.svg") center right 12px no-repeat;
+      background: url("../img/svg/icon-email-green.svg") center right 12px no-repeat;
     }
 
     &:not(:focus):not(:placeholder-shown):invalid {
-      background: url("../../img/svg/icon-email-error.svg") center right 12px no-repeat;
+      background: url("../img/svg/icon-email-error.svg") center right 12px no-repeat;
     }
   }
 
   &--phone {
-    background: url("../../img/svg/icon-phone.svg") center right 12px no-repeat;
+    background: url("../img/svg/icon-phone.svg") center right 12px no-repeat;
 
     &:focus,
     &:valid {
-      background: url("../../img/svg/icon-phone-green.svg") center right 12px no-repeat;
+      background: url("../img/svg/icon-phone-green.svg") center right 12px no-repeat;
     }
 
     &:not(:focus):not(:placeholder-shown):invalid {
-      background: url("../../img/svg/icon-phone-error.svg") center right 12px no-repeat;
+      background: url("../img/svg/icon-phone-error.svg") center right 12px no-repeat;
     }
   }
 
@@ -171,7 +171,6 @@ input[type="number"],
 input[type="number"]:hover,
 input[type="number"]:focus {
   appearance: none;
-  appearance: textfield;
 }
 
 .feedback__area {

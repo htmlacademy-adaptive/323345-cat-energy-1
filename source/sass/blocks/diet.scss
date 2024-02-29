@@ -46,7 +46,7 @@
     top: 35px;
     width: 36px;
     height: 50px;
-    background: url("../../img/svg/icon-slim-cat.svg") center left  no-repeat;
+    background: url("../img/svg/icon-slim-cat.svg") center left  no-repeat;
   }
 
   &--pro::after {
@@ -56,7 +56,7 @@
     top: 49px;
     width: 67px;
     height: 28px;
-    background: url("../../img/svg/icon-pro-cat.svg") center left no-repeat;
+    background: url("../img/svg/icon-pro-cat.svg") center left no-repeat;
   }
 }
 
@@ -123,7 +123,7 @@
   }
 
   .diet__text {
-    width: 340px;
+    padding-right: 232px;
     font-size: 16px;
     line-height: 24px;
 
@@ -140,7 +140,8 @@
     &::before {
       width: 200px;
       height: 200px;
-      left: 64%;
+      left: inherit;
+      right: 63px;
       top: inherit;
     }
 
@@ -148,16 +149,18 @@
       width: 140px;
       height: 194px;
       background-size: cover;
-      left: 70%;
-      top: inherit;
+      left: inherit;
+      right: 93px;
+      top: 81px;
     }
 
     &--pro::after {
       width: 268px;
       height: 112px;
       background-size: cover;
-      left: 59%;
-      top: 125px;
+      left: inherit;
+      right: 29px;
+      top: 135px;
     }
   }
 
@@ -181,7 +184,7 @@
   }
 
   .diet__text {
-    width: 457px;
+    padding: 0;
     font-size: 16px;
     line-height: 24px;
 
@@ -191,7 +194,7 @@
   }
 
   .diet__title {
-    margin-left: 162px;
+    padding-left: 162px;
     font-size: 36px;
     line-height: 36px;
 
