@@ -1,9 +1,12 @@
 .gift {
-  position: relative;
+  display: flex;
+  justify-content: center;
   padding: 35px 0;
 }
 
 .gift__img-wrap {
+  position: relative;
+  width: 280px;
   background: rgba($color-bg-second, 0.82);
 }
 
@@ -11,21 +14,21 @@
   display: block;
   opacity: 0.23;
   mix-blend-mode: multiply;
-  background-size: contain;
 }
 
 .gift__icon {
   position: absolute;
-  top: 93px;
+  top: 59px;
   left: 101px;
 }
 
 
 .gift__text {
   position: absolute;
-  bottom: 67px;
-  left: 64px;
+  bottom: 43px;
+  left: 58px;
   width: 160px;
+  margin: 0;
   font-family: $ff-default;
   font-size: 16px;
   line-height: 20px;
@@ -36,23 +39,23 @@
 @media (min-width: $tablet-width) {
   .gift {
     &__img-wrap {
+      width: 707px;
       height: 200px;
-      overflow: hidden;
     }
 
     &__img {
-      width: fill-available;
-      transform: translate(0, -43%);
+      width: fit-content;
     }
 
     &__icon {
-      top: 96px;
-      left: 91px;
+      top: 57px;
+      left: 77px;
     }
 
     &__text {
-      bottom: 89px;
-      left: 60%;
+      bottom: 69px;
+      left: auto;
+      right: 125px;
     }
   }
 }
@@ -69,18 +72,16 @@
     &__img {
       width: 245px;
       height: 288px;
-      object-fit: fill;
-      transform: none;
     }
 
     &__icon {
-      top: 53px;
-      left: 91px;
+      top: 56px;
+      left: 83px;
     }
 
     &__text {
-      bottom: 28px;
-      left: 49px;
+      bottom: 43px;
+      left: 42px;
     }
   }
 }
