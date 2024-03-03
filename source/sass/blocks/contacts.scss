@@ -24,13 +24,17 @@
 
 .contacts__address {
   max-width: 140px;
+  justify-self: end;
   font-family: $ff-default;
   color: $color-font;
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
-  text-align: end;
-  justify-self: end;
+  text-transform: none;
+
+  br {
+    display: none;
+  }
 }
 
 .contacts__img {
@@ -60,6 +64,10 @@
     justify-self: end;
     font-size: 16px;
     text-align: end;
+
+    br {
+      display: block;
+    }
   }
 
   .contacts__img {
@@ -80,5 +88,9 @@
 
   .contacts__baner {
     margin: 0;
+  }
+
+  .contacts__address {
+    text-align: start;
   }
 }

@@ -142,7 +142,7 @@
     position: absolute;
     top: 59%;
     left: calc(100% + 20px);
-    width: 100vw;
+    width: calc(100vw - 100% - 57px);
     height: 2px;
     background-color: $color-bg-second;
     z-index: -1;
@@ -226,6 +226,7 @@ input[type="number"]:focus {
 
     &::before {
       left: calc(100% + 40px);
+      width: calc(100vw - 100% - 127px);
     }
 
     &::after {
@@ -247,6 +248,12 @@ input[type="number"]:focus {
   .feedback--border {
     padding: 25px 27px;
     transform: translateY(85px);
+  }
+
+  .feedback__title {
+    &::before {
+      width: calc(100vw - 100% - 167px);
+    }
   }
 
   .feedback--fullscreen {

@@ -4,6 +4,7 @@
   align-items: center;
 
   &--more {
+    display: flex;
     flex-direction: column;
     padding-top: 5px;
     margin-bottom: 6px;
@@ -20,9 +21,9 @@
   text-align: center;
 }
 
-// .card__img {
-//   margin: 10px 36px;
-// }
+.card__img {
+  margin-bottom: 30px;
+}
 
 .card__info {
   width: 100%;
@@ -48,6 +49,11 @@
   text-align: start;
   color: $color-font-second;
   text-transform: uppercase;
+
+  &-link {
+    text-decoration: none;
+    color: $color-font;
+  }
 }
 
 .card__add-img {
@@ -58,6 +64,7 @@
 }
 
 .card__add-title {
+  margin-bottom: 8px;
   font-family: $ff-title;
   font-size: 16px;
   line-height: 20px;
