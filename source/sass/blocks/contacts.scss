@@ -24,7 +24,7 @@
 
 .contacts__address {
   max-width: 140px;
-  justify-self: end;
+  justify-self: flex-end;
   font-family: $ff-default;
   color: $color-font;
   font-size: 14px;
@@ -61,7 +61,7 @@
 
   .contacts__address {
     max-width: 157px;
-    justify-self: end;
+    justify-self: flex-end;
     font-size: 16px;
     text-align: end;
 
