@@ -32,12 +32,12 @@
 .footer__logo {
   transition: $trans-default;
 
-  &:hover .footer__logo-color {
+  &:hover .footer__logo-img {
     fill: $color-logo-hover;
     transition: $trans-default;
   }
 
-  &:active .footer__logo-color {
+  &:active .footer__logo-img {
     fill: $color-logo-active;
     transition: $trans-default;
   }
@@ -68,14 +68,18 @@
 .footer__link {
   display: block;
   transition: $trans-default;
+}
+
+.footer__social-icon {
+  fill: $color-social;
 
   &:hover {
-    background-color: $color-bg-second;
+    fill: $color-bg-second;
     transition: $trans-default;
   }
 
   &:active {
-    background-color: $color-bg-second;
+    fill: $color-bg-second;
     opacity: 0.3;
     transition: $trans-default;
   }
@@ -83,36 +87,6 @@
   &:focus-visible {
     outline: 2px solid $color-outline;
     transition: $trans-100;
-  }
-
-  &--vkontakte {
-    width: 31px;
-    height: 23px;
-    background-color: $color-social;
-    mask-image: url("../img/svg/vkontakte.svg");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    transition: $trans-default;
-  }
-
-  &--youtube {
-    width: 31px;
-    height: 23px;
-    background-color: $color-social;
-    mask-image: url("../img/svg/youtube.svg");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    transition: $trans-default;
-  }
-
-  &--telegram {
-    width: 38px;
-    height: 23px;
-    background-color: $color-social;
-    mask-image: url("../img/svg/telegram.svg");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    transition: $trans-default;
   }
 }
 
