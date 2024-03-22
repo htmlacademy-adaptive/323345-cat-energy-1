@@ -1,10 +1,11 @@
 .form-feedback {
-  margin: 27px 0 32px;
+  margin: 16px 0 32px;
   width: 100%;
 
   &__button {
     width: 100%;
-    padding: 15px;
+    margin-top: 5px;
+    padding: 10px;
     font-family: $ff-title;
     font-size: 16px;
     line-height: 20px;
@@ -33,19 +34,22 @@
   }
 
   &__note {
-    margin: 0;
-    margin-top: 21px;
+    margin: 21px 0 0 11px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-family: $ff-default;
     font-size: $fz-default;
     line-height: 16px;
     text-transform: none;
     color: $color-font-title;
-    text-align: center;
   }
 }
 
 @media (min-width: $tablet-width) {
   .form-feedback {
+    margin: 16px 0 60px;
+
     &__wrap {
       display: flex;
       flex-direction: row;
@@ -53,13 +57,15 @@
     }
 
     &__button {
+      margin-top: 0;
+      padding: 14px;
       width: 284px;
       font-size: 20px;
       line-height: 26px;
     }
 
     &__note {
-      margin: 0 0 0 60px;
+      margin: -3px 0 0 72px;
       font-size: 16px;
     }
   }
@@ -67,6 +73,7 @@
 
 @media (min-width: $desktop-width) {
   .form-feedback {
+    margin: 129px 0 79px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
@@ -81,6 +88,10 @@
 
     &__button {
       width: 570px;
+    }
+
+    &__note {
+      margin: -3px 0 0 92px;
     }
   }
 }
