@@ -5,10 +5,10 @@
 
 .header__wrap {
   margin: 0 auto;
+  padding: 13px 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 20px;
   justify-content: space-between;
   gap: 40px;
 }
@@ -23,7 +23,6 @@
 }
 
 .header__logo {
-  margin: 15px 0;
   width: 190px;
   display: flex;
   justify-content: space-between;
@@ -50,7 +49,7 @@
 @media (min-width: $tablet-width) {
   .header {
     border: none;
-    margin-top: 16px;
+    margin-top: 25px;
   }
 
   .header__wrap {
@@ -61,9 +60,13 @@
     width: 174px;
   }
 
-  .hedaer__logotype {
+  .header__logotype {
     width: 60px;
     height: 50px;
+  }
+
+  .header__nav {
+    margin-right: 5px;
   }
 }
 
@@ -86,18 +89,20 @@
     width: 202px;
   }
 
-  .hedaer__logotype {
+  .header__logotype {
     width: 70px;
     height: 59px;
   }
 
-  .hedaer__logotype-text {
+  .header__logotype-text {
     width: 118px;
     height: 21px;
   }
 
   .header__nav {
     flex: inherit;
+    margin-top: 7px;
+    margin-right: 2px;
   }
 
   .header__wrap--second {

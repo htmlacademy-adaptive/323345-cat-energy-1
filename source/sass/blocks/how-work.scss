@@ -3,7 +3,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 39px;
   margin-bottom: 49px;
 }
 
@@ -21,7 +21,7 @@
   flex-direction: column;
   align-content: center;
   justify-content: space-between;
-  gap: 26px;
+  gap: 20px;
 }
 
 .how-work__text {
@@ -54,6 +54,10 @@
 
 
 @media (min-width: $tablet-width) {
+  .how-work {
+    gap: 32px;
+  }
+
   .how-work__title {
     font-size: 60px;
     line-height: 60px;
@@ -62,15 +66,17 @@
   .how-work__block {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 137px;
+    gap: 37px;
+    column-gap: 60px;
   }
 
   .how-work__text {
     position: relative;
     min-width: 230px;
     height: 280px;
-    padding-top: 151px;
+    padding-top: 95px;
     padding-left: 0;
+    padding-right: 56px;
     font-size: 16px;
     line-height: 24px;
 
@@ -81,7 +87,7 @@
         position: absolute;
         content: "1";
         top: 0;
-        right: 21px;
+        left: 118px;
         font-family: $ff-title;
         font-size: 280px;
         line-height: 280px;
@@ -97,7 +103,7 @@
         position: absolute;
         content: "2";
         top: 0;
-        right: 0;
+        left: 118px;
         font-family: $ff-title;
         font-size: 280px;
         line-height: 280px;
@@ -113,7 +119,7 @@
         position: absolute;
         content: "3";
         top: 0;
-        right: -2px;
+        left: 118px;
         font-family: $ff-title;
         font-size: 280px;
         line-height: 280px;
@@ -129,7 +135,7 @@
         position: absolute;
         content: "4";
         top: 0;
-        right: -13px;
+        left: 118px;
         font-family: $ff-title;
         font-size: 280px;
         line-height: 280px;
@@ -141,6 +147,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .how-work {
+    margin: 0 auto 31px;
+  }
+
   .how-work__title {
     font-size: 60px;
     line-height: 60px;
@@ -149,14 +159,16 @@
   .how-work__block {
     display: flex;
     flex-direction: row;
+    column-gap: 72px;
   }
 
   .how-work__text {
     position: relative;
     min-width: 230px;
     height: 280px;
-    padding-top: 151px;
+    padding-top: 94px;
     padding-left: 0;
+    padding-right: 0;
     font-size: 16px;
     line-height: 24px;
 
@@ -184,6 +196,7 @@
         content: "2";
         top: 0;
         right: 0;
+        left: 110px;
         font-family: $ff-title;
         font-size: 280px;
         line-height: 280px;
@@ -199,7 +212,8 @@
         position: absolute;
         content: "3";
         top: 0;
-        right: -2px;
+        right: 0px;
+        left: 110px;
         font-family: $ff-title;
         font-size: 280px;
         line-height: 280px;
@@ -215,7 +229,8 @@
         position: absolute;
         content: "4";
         top: 0;
-        right: -13px;
+        right: 0;
+        left: 114px;
         font-family: $ff-title;
         font-size: 280px;
         line-height: 280px;
