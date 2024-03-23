@@ -90,18 +90,18 @@
   font-style: normal;
   background-color: $color-bg-basic;
   text-transform: uppercase;
-  border: 1px solid $color-border-three;
+  border: 2px solid $color-border-three;
 
   &--email {
-    background: url("../img/svg/icon-email.svg") center right 13px no-repeat;
+    background: url("../img/svg/icon-email.svg") center right 14px no-repeat;
 
     &:focus,
     &:valid {
-      background: url("../img/svg/icon-email-green.svg") center right 13px no-repeat;
+      background: url("../img/svg/icon-email-green.svg") center right 14px no-repeat;
     }
 
     &:not(:focus):not(:placeholder-shown):invalid {
-      background: url("../img/svg/icon-email-error.svg") center right 13px no-repeat;
+      background: url("../img/svg/icon-email-error.svg") center right 14px no-repeat;
     }
   }
 
@@ -120,10 +120,12 @@
 
   &:valid {
     border: 2px solid $color-form-valid;
+    border-radius: 5px;
   }
 
   &:not(:focus):not(:placeholder-shown):invalid {
     border: 2px solid $color-form-invalid;
+    border-radius: 5px;
   }
 }
 

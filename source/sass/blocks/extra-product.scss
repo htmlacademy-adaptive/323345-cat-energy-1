@@ -6,7 +6,8 @@
 .extra-product__title {
   position: relative;
   width: fit-content;
-  margin-bottom: 36px;
+  margin-top: 6px;
+  margin-bottom: 35px;
   margin-left: -20px;
   padding-left: 20px;
   padding-right: 20px;
@@ -17,12 +18,11 @@
   color: $color-font-title;
   background-color: $color-bg-basic;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     top: 59%;
-    left: -110px;
-    width: 100vw;
+    width: calc(100vw - 93%);
     height: 2px;
     background-color: $color-bg-second;
     z-index: -1;
@@ -37,7 +37,7 @@
 }
 
 .extra-product__card {
-  padding-bottom: 19px;
+  padding-bottom: 17px;
   border-bottom: 1px solid $color-border-second;
 }
 
@@ -49,17 +49,24 @@
 @media (min-width: $tablet-width) {
   .extra-product {
     width: 100%;
-    margin-bottom: 89px;
+    margin-bottom: 76px;
 
     &__title {
+      margin-bottom: 80px;
+      margin-left: 0;
+      padding: 0 40px;
       font-size: 36px;
       line-height: 36px;
-      margin-bottom: 80px;
-      padding-left: 60px;
+
+      &::after {
+        left: -60px;
+        width: calc(100vw - -13px);
+      }
     }
 
     &__list {
       border: none;
+      margin-bottom: 70px;
     }
 
     &__item {
@@ -72,7 +79,7 @@
 
     &__card {
       border: none;
-      padding: 26px 38px 28px;
+      padding: 19px 38px 28px;
     }
   }
 }
@@ -80,6 +87,7 @@
 @media (min-width: $desktop-width) {
   .extra-product {
     padding: 0;
+    margin-bottom: 17px;
 
     &__list {
       width: 100%;
@@ -90,8 +98,18 @@
       border-right: none;
     }
 
+    &__title {
+      margin-left: -40px;
+
+      &::after {
+        top: 64%;
+        left: -110px;
+        width: calc(100vw + 40px);
+      }
+    }
+
     &__card {
-      padding: 12px 0;
+      padding: 16px 0 15px;
       display: flex;
 
       .catalog__button {

@@ -5,6 +5,8 @@
 }
 
 .catalog__title {
+  margin: 28px 0 42px;
+  display: flex;
   text-align: center;
   font-family: $ff-title;
   font-size: 36px;
@@ -14,13 +16,13 @@
 }
 
 .catalog__list {
-  list-style-type: none;
-  padding: 16px 0;
   margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .catalog__item {
-  padding: 20px 20px 25px;
+  padding: 20px 0 25px;
   position: relative;
 
   &::after {
@@ -47,7 +49,6 @@
 .catalog__button {
   width: 100%;
   padding: 10px;
-  margin-top: 15px;
   font-family: $ff-title;
   font-size: 16px;
   line-height: 20px;
@@ -80,7 +81,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog__cards {
+    margin-bottom: 64px;
+  }
+
   .catalog__title {
+    margin: 66px 0 79px;
     font-size: 60px;
     line-height: 60px;
     text-align: start;
@@ -90,11 +96,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
+    row-gap: 56px;
     border-top: none;
   }
 
   .catalog__item {
-    padding: 30px 37px 40px;
+    padding: 33px 37px 40px;
 
     &::after {
       display: none;
@@ -103,14 +110,28 @@
     &::before {
       display: none;
     }
+
+    &:nth-child(even):not(:last-child) {
+      padding: 16px 37px 40px;
+
+      .card__img {
+        width: 168px;
+        height: 206px;
+      }
+
+      .card__img-wrap {
+        margin-bottom: 20px;
+      }
+    }
+
   }
 
   .catalog__item:not(:last-child) {
-    background: linear-gradient(180deg, $color-bg-basic 0%, $color-bg-basic 17.5%, $color-bg-three 17.5%, $color-bg-three 100%);
+    background: linear-gradient(180deg, $color-bg-basic 0%, $color-bg-basic 16.5%, $color-bg-three 16.5%, $color-bg-three 100%);
   }
 
   .catalog__button {
-    margin-top: 32px;
+    margin-top: 12px;
   }
 
   .catalog__item--more {
@@ -124,7 +145,7 @@
   .catalog__item-wrap {
     height: 429px;
     border: 2px solid $color-bg-three;
-    padding: 50px 37px 40px;
+    padding: 43px 37px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -133,6 +154,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog__cards {
+    margin-top: 54px;
+    margin-bottom: 71px;
+  }
+
   .catalog__title {
     margin-top: 74px;
   }
@@ -142,5 +168,28 @@
     margin-top: 33px;
     padding: 0;
     column-gap: 80px;
+  }
+
+  .catalog__item {
+    padding: 34px 37px 40px;
+
+    &:nth-child(even):not(:last-child) {
+      .card__img {
+        width: 169px;
+        height: 210px;
+      }
+
+      .card__img-wrap {
+        margin-bottom: 8px;
+      }
+    }
+
+    &--more {
+      padding: 0;
+    }
+  }
+
+  .catalog__button {
+    margin-top: 18px;
   }
 }

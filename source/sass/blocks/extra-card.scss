@@ -1,6 +1,6 @@
 .extra-card__name {
   margin-top: 13px;
-  margin-bottom: 13px;
+  margin-bottom: 11px;
   font-family: $ff-title;
   font-size: 16px;
   line-height: 16px;
@@ -10,7 +10,18 @@
 }
 
 .extra-card__info {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+
+  tbody {
+    margin-bottom: 15px;
+  }
+
+  tr {
+    display: flex;
+    justify-content: space-between;
+  }
 
   th {
     font-family: $ff-default;
@@ -35,12 +46,17 @@
     &__name {
       font-size: 20px;
       line-height: 20px;
+      margin-top: 8px;
     }
 
     &__info {
-      display: flex;
+      flex-direction: row;
       align-items: center;
       justify-content: space-between;
+
+      tbody{
+        margin-bottom: 0;
+      }
 
       tr {
         display: flex;
@@ -63,13 +79,25 @@
 @media (min-width: $desktop-width) {
   .extra-card {
     &__info {
+      flex: 1;
+
+      tr {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        width: 300px;
+        margin-right: 25px;
+        gap: 10px;
+      }
+
       th {
-        margin-right: 63px;
+        grid-column: 1 / 2;
+        text-align: start;
       }
 
       td {
-        margin-right: 40px;
-        margin-left: 49px;
+        grid-column: 2 / 3;
+        text-align: start;
+        margin-left: 0;
       }
     }
   }
