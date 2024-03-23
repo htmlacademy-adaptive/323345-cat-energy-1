@@ -60,7 +60,7 @@
 
   &--contacts {
     margin-top: 34px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -259,7 +259,7 @@ input[type="number"]:focus {
 
     &::before,
     &::after {
-      display: none;;
+      display: none;
     }
   }
 
@@ -271,6 +271,7 @@ input[type="number"]:focus {
     padding: 11px;
     padding-left: 18px;
   }
+
   .feedback__box {
     gap: 4px;
   }
@@ -340,7 +341,7 @@ input[type="number"]:focus {
 
     &--border {
       margin-top: 63px;
-      padding: 0px 27px;
+      padding: 0 27px;
       transform: translateY(85px);
     }
 
