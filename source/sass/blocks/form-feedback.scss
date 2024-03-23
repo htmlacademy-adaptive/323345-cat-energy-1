@@ -18,18 +18,18 @@
 
     &:hover {
       background-color: $color-bg-button;
-      transition: $trans-default;
+      transition: background-color $trans-default;
     }
 
     &:active {
       color: rgb(255, 255, 255, 0.3);
       background-color: $color-bg-button;
-      transition: $trans-default;
+      transition: background-color $trans-default, color $trans-default;
     }
 
     &:focus-visible {
       outline: 2px solid $color-outline;
-      transition: $trans-100;
+      transition: outline $trans-100;
     }
   }
 

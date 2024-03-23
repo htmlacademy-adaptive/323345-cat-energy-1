@@ -90,7 +90,7 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  transition: $trans-default;
+  transition: outline $trans-100, opacity $trans-default;
 
   &:hover .diet__link-img {
     width: 26px;
@@ -98,12 +98,12 @@
 
   &:active {
     opacity: 0.3;
-    transition: $trans-default;
+    transition: opacity $trans-default;
   }
 
   &:focus-visible {
     outline: 2px solid $color-outline;
-    transition: $trans-100;
+    transition: outline $trans-100;
   }
 
   &-img {

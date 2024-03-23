@@ -10,7 +10,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  transition: $trans-100;
+  transition: outline $trans-100, background-color $trans-default, box-shadow $trans-default;
 
   &::before {
     content: "";
@@ -20,7 +20,7 @@
     height: 2px;
     background-color: $color-font-title;
     box-shadow: 0 8px 0 0 $color-font-title, 0 -8px 0 0 $color-font-title;
-    transition: $trans-default;
+    transition: box-shadow $trans-default, background-color $trans-default;
   }
 
   &::after {
@@ -32,25 +32,24 @@
     height: 24px;
     display: none;
     background: url("../img/svg/burger-open.svg") center center no-repeat;
-    transition: $trans-default;
   }
 
   &:focus-visible {
     outline: 2px solid $color-outline;
-    transition: $trans-100;
+    transition: outline $trans-100;
   }
 }
 
 .main-menu:hover .main-menu__toggle::before {
   background-color: $color-bg-second;
   box-shadow: 0 6px 0 0 $color-bg-second, 0 -6px 0 0 $color-bg-second;
-  transition: $trans-default;
+  transition: box-shadow $trans-default, background-color $trans-default;
 }
 
 .main-menu__list {
   position: absolute;
   left: 0;
-  top: 65px;
+  top: 64px;
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -84,18 +83,18 @@
 .main-menu--opened {
   &:hover .main-menu__toggle::after {
     opacity: 0.6;
-    transition: $trans-default;
+    transition: opacity $trans-default;
   }
 
   &:active .main-menu__toggle::after {
     opacity: 0.3;
-    transition: $trans-default;
+    transition: opacity $trans-default;
     z-index: 1;
   }
 
   &:focus-visible .main-menu__toggle::after {
     outline: 2px solid $color-outline;
-    transition: $trans-100;
+    transition: outline $trans-100;
   }
 }
 
@@ -114,17 +113,17 @@
 
   &:hover {
     opacity: 0.6;
-    transition: $trans-default;
+    transition: opacity $trans-default;
   }
 
   &:active {
     opacity: 0.3;
-    transition: $trans-default;
+    transition: opacity $trans-default;
   }
 
   &:focus-visible {
     outline: 2px solid $color-outline;
-    transition: $trans-100;
+    transition: outline $trans-100;
   }
 
   &--current {

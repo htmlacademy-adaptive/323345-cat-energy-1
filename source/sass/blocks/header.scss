@@ -28,21 +28,21 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
-  transition: $trans-100;
+  transition: opacity $trans-default, outline $trans-100;
 
   &:hover {
     opacity: 0.8;
-    transition: $trans-default;
+    transition: opacity $trans-default;
   }
 
   &:active {
     opacity: 0.6;
-    transition: $trans-default;
+    transition: opacity $trans-default;
   }
 
   &:focus-visible {
     outline: 2px solid $color-outline;
-    transition: $trans-100;
+    transition: outline $trans-100;
   }
 }
 
