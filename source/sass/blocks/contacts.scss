@@ -37,6 +37,10 @@
   }
 }
 
+.contacts__img-wrap {
+  width: 100%;
+}
+
 .contacts__img {
   width: 100%;
   border: none;
@@ -72,6 +76,11 @@
 
   .contacts__img {
     height: 400px;
+
+    &-noscript {
+      width: 100%;
+      height: 400px;
+    }
   }
 }
 
