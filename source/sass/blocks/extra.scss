@@ -62,6 +62,10 @@
   transition: outline $trans-100;
 }
 
+.extra__field:disabled {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .extra {
     display: grid;

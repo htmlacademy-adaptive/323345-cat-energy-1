@@ -164,6 +164,11 @@
   transition: outline $trans-100;
 }
 
+.feedback__field:disabled,
+.feedback__field:disabled ~ .feedback__control-lable {
+  opacity: 0.3;
+}
+
 .feedback__title {
   position: relative;
   margin: 0;
