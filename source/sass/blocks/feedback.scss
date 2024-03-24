@@ -158,6 +158,12 @@
   border-radius: 50%;
 }
 
+.feedback__field:focus-visible + .feedback__color-mark,
+.feedback__field:focus-visible {
+  outline: 2px solid $color-outline;
+  transition: outline $trans-100;
+}
+
 .feedback__title {
   position: relative;
   margin: 0;

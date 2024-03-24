@@ -57,6 +57,11 @@
   background: url("../img/svg/icon-ok.svg") center center no-repeat;
 }
 
+.extra__field:focus-visible + .extra__text-mark {
+  outline: 2px solid $color-outline;
+  transition: outline $trans-100;
+}
+
 @media (min-width: $tablet-width) {
   .extra {
     display: grid;
