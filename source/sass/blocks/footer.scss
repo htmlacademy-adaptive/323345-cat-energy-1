@@ -70,7 +70,7 @@
 .footer__link {
   display: flex;
   transition: display $trans-default;
-  
+
   &:focus-visible {
     outline: 2px solid $color-outline;
     transition: outline $trans-100;
@@ -90,7 +90,6 @@
     opacity: 0.3;
     transition: fill $trans-default, opacity $trans-default;
   }
-
 }
 
 .footer__copyright {
