@@ -190,7 +190,8 @@
 
 @media (min-width: $desktop-width) {
   .diet {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 80px;
     padding: 20px 0;
     margin-bottom: 42px;

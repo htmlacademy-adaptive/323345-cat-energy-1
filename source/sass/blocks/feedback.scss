@@ -51,7 +51,7 @@
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  gap: 12px;
+  gap: 8px;
   list-style-type: none;
 
   &--options {
@@ -279,7 +279,7 @@ input[type="number"]:focus {
   .feedback__control-lable {
     font-size: 20px;
     line-height: 20px;
-    padding: 11px;
+    padding: 10px;
     padding-left: 18px;
   }
 
@@ -315,7 +315,7 @@ input[type="number"]:focus {
 
   .feedback__list {
     margin-top: 64px;
-    gap: 18px;
+    gap: 17px;
 
     &--options {
       margin-bottom: 27px;
@@ -351,13 +351,13 @@ input[type="number"]:focus {
     margin: 0;
 
     &--border {
-      margin-top: 63px;
       padding: 0 27px;
-      transform: translateY(85px);
+      align-self: end;
+      margin-bottom: 13px;
     }
 
     &--user {
-      margin-top: 60px;
+      margin-top: 57px;
     }
 
     &--coments {
@@ -375,12 +375,21 @@ input[type="number"]:focus {
     }
   }
 
+  .feedback__list {
+    gap: 18px;
+
+    &--options {
+      margin-bottom: 23px;
+    }
+  }
+
   .feedback--fullscreen {
     grid-column: 1/3;
 
     .feedback__list {
       flex-direction: row;
-      gap: 19px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
 
       &--contacts {
         gap: 81px;
