@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Сайт по продаже и подбору кошачай еды.">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
@@ -117,12 +118,20 @@
       </section>
       <section class="how-work">
         <h2 class="how-work__title">Как это работает</h2>
-        <div class="how-work__block">
-          <p class="how-work__text how-work__text--leaf">Функциональное питание содержит только полезные питательные вещества.</p>
-          <p class="how-work__text how-work__text--hot-water">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-          <p class="how-work__text how-work__text--eat">Замените один-два приема обычной еды на наше функциональное питание.</p>
-          <p class="how-work__text how-work__text--scale">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-        </div>
+        <ul class="how-work__list">
+          <li class="how-work__item">
+            <p class="how-work__text how-work__text--leaf">Функциональное питание содержит только полезные питательные вещества.</p>
+          </li>
+          <li class="how-work__item">
+            <p class="how-work__text how-work__text--hot-water">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          </li>
+          <li class="how-work__item">
+            <p class="how-work__text how-work__text--eat">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          </li>
+          <li class="how-work__item">
+            <p class="how-work__text how-work__text--scale">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          </li>
+        </ul>
       </section>
     </div>
     <section class="live-model">
@@ -145,12 +154,18 @@
             </div>
           </div>
           <div class="live-model__slider">
-            <button class="live-model__slider-scale" type="button"></button>
+            <button class="live-model__slider-scale" type="button" title="slider"></button>
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/img-cat-bold-tablet.webp 1x, img/img-cat-bold-tablet2x.webp 2x">
+              <source type="image/webp" srcset="img/img-cat-bold-mobile.webp 1x, img/img-cat-bold-mobile2x.webp 2x">
+
               <source media="(min-width: 768px)" srcset="img/img-cat-bold-tablet.png 1x, img/img-cat-bold-tablet2x.png 2x">
               <img class="live-model__before" src="img/img-cat-bold-mobile.png" srcset="img/img-cat-bold-mobile2x.png 2x" width="138" height="256" alt="Кот до программы">
             </picture>
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/img-cat-slim-tablet.webp 1x, img/img-cat-slim-tablet2x.webp 2x">
+              <source type="image/webp" srcset="img/img-cat-slim-tablet.webp 1x, img/img-cat-slim-tablet2x.webp 2x">
+
               <source media="(min-width: 768px)" srcset="img/img-cat-slim-tablet.png 1x, img/img-cat-slim-tablet2x.png 2x">
               <img class="live-model__after" src="img/img-cat-slim-mobile.png" srcset="img/img-cat-slim-mobile2x.png 2x" width="138" height="256" alt="Кот после программы">
             </picture>
@@ -168,8 +183,20 @@
           </address>
         </div>
       </div>
-      <iframe class="contacts__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7437.35379686458!2d30.31674688743582!3d59.93955529752492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1709489849839!5m2!1sru!2sru" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+      <div class="contacts__img-wrap">
+        <iframe class="contacts__img" title="Мы на карте" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1822037313746!2d30.321349354612376!3d59.93892696180316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1711047664721!5m2!1sru!2sru" width="320" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <noscript>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp">
+            <source type="image/webp" srcset="img/map-mobile.webp">
+
+            <source media="(min-width: 1440px)" srcset="img/map-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.png">
+            <img class="contacts__img-noscript" src="img/map-mobile.png" width="320" height="362" alt="Мы на карте">
+          </picture>
+        </noscript>
+      </div>
     </section>
   </main>
 

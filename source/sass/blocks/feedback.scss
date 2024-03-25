@@ -1,17 +1,35 @@
 .feedback {
+  position: relative;
   padding: 0;
   margin: 12px auto;
   border: none;
 
-  &--border {
-    border-top: 1px solid $color-bg-four;
-    border-bottom: 1px solid $color-bg-four;
+  &--border::before,
+  &--border::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: $color-bg-four;
+  }
+
+  &--fullscreen {
+    margin-top: 29px;
+  }
+
+  &--coments {
+    margin-top: 24px;
+  }
+
+  &--more {
+    margin-top: 18px;
   }
 }
 
 .feedback__title-form {
   display: block;
-  margin: 27px 0;
+  margin: 23px 0;
   padding: 0;
   font-size: 36px;
   line-height: 36px;
@@ -20,18 +38,30 @@
 }
 
 .feedback__subtitle {
+  margin-bottom: 38px;
   font-size: 14px;
   line-height: 18px;
   color: $color-font-title;
 }
 
 .feedback__list {
-  list-style-type: none;
   padding: 0;
+  margin-top: 17px;
+  margin-bottom: 13px;
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  gap: 14px;
+  gap: 8px;
+  list-style-type: none;
+
+  &--options {
+    gap: 8px;
+  }
+
+  &--contacts {
+    margin-top: 34px;
+    margin-bottom: 0;
+  }
 }
 
 .feedback__item {
@@ -60,45 +90,48 @@
   font-style: normal;
   background-color: $color-bg-basic;
   text-transform: uppercase;
-  border: 1px solid $color-border-three;
+  border: 2px solid $color-border-three;
 
   &--email {
-    background: url("../img/svg/icon-email.svg") center right 12px no-repeat;
+    background: url("../img/svg/icon-email.svg") center right 14px no-repeat;
 
     &:focus,
     &:valid {
-      background: url("../img/svg/icon-email-green.svg") center right 12px no-repeat;
+      background: url("../img/svg/icon-email-green.svg") center right 14px no-repeat;
     }
 
     &:not(:focus):not(:placeholder-shown):invalid {
-      background: url("../img/svg/icon-email-error.svg") center right 12px no-repeat;
+      background: url("../img/svg/icon-email-error.svg") center right 14px no-repeat;
     }
   }
 
   &--phone {
-    background: url("../img/svg/icon-phone.svg") center right 12px no-repeat;
+    background: url("../img/svg/icon-phone.svg") center right 14px no-repeat;
 
     &:focus,
     &:valid {
-      background: url("../img/svg/icon-phone-green.svg") center right 12px no-repeat;
+      background: url("../img/svg/icon-phone-green.svg") center right 14px no-repeat;
     }
 
     &:not(:focus):not(:placeholder-shown):invalid {
-      background: url("../img/svg/icon-phone-error.svg") center right 12px no-repeat;
+      background: url("../img/svg/icon-phone-error.svg") center right 14px no-repeat;
     }
   }
 
   &:valid {
     border: 2px solid $color-form-valid;
+    border-radius: 5px;
   }
 
   &:not(:focus):not(:placeholder-shown):invalid {
     border: 2px solid $color-form-invalid;
+    border-radius: 5px;
   }
 }
 
 .feedback__lable {
   position: relative;
+  display: block;
   padding: 6px 45px;
 }
 
@@ -125,9 +158,21 @@
   border-radius: 50%;
 }
 
+.feedback__field:focus-visible + .feedback__color-mark,
+.feedback__field:focus-visible {
+  outline: 2px solid $color-outline;
+  transition: outline $trans-100;
+}
+
+.feedback__field:disabled,
+.feedback__field:disabled ~ .feedback__control-lable {
+  opacity: 0.3;
+}
+
 .feedback__title {
   position: relative;
-  margin: 19px 0;
+  margin: 0;
+  padding: 0;
   text-align: start;
   font-family: $ff-title;
   font-size: 24px;
@@ -142,7 +187,7 @@
     position: absolute;
     top: 59%;
     left: calc(100% + 20px);
-    width: calc(100vw - 100% - 57px);
+    width: calc(100vw - 100% - 41px);
     height: 2px;
     background-color: $color-bg-second;
     z-index: -1;
@@ -177,6 +222,7 @@ input[type="number"]:focus {
   width: 100%;
   height: 150px;
   padding: 14px;
+  margin-top: 39px;
   font-family: $ff-title;
   font-size: 16px;
   font-weight: 400;
@@ -189,7 +235,16 @@ input[type="number"]:focus {
 
 @media (min-width: $tablet-width) {
   .feedback {
-    margin: 65px 0;
+    margin: 49px 0;
+
+    &--fullscreen {
+      margin-top: 65px;
+    }
+
+    &--more {
+      margin-top: 61px;
+      margin-bottom: 39px;
+    }
   }
 
   .feedback__wrap {
@@ -198,6 +253,7 @@ input[type="number"]:focus {
   }
 
   .feedback__title-form {
+    margin: 35px 0;
     font-size: 60px;
     line-height: 60px;
   }
@@ -208,8 +264,14 @@ input[type="number"]:focus {
   }
 
   .feedback--border {
+    margin-top: 58px;
     border: 1px solid $color-bg-four;
     padding-left: 27px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 
   .feedback__text,
@@ -217,7 +279,16 @@ input[type="number"]:focus {
   .feedback__control-lable {
     font-size: 20px;
     line-height: 20px;
-    padding: 11px;
+    padding: 10px;
+    padding-left: 18px;
+  }
+
+  .feedback__box {
+    gap: 4px;
+  }
+
+  .feedback__text {
+    padding-left: 0;
   }
 
   .feedback__title {
@@ -226,7 +297,7 @@ input[type="number"]:focus {
 
     &::before {
       left: calc(100% + 40px);
-      width: calc(100vw - 100% - 127px);
+      width: calc(100vw - 100% - 110px);
     }
 
     &::after {
@@ -235,24 +306,80 @@ input[type="number"]:focus {
   }
 
   .feedback__area {
+    height: 175px;
+    padding: 10px 20px;
+    margin-top: 87px;
     font-size: 20px;
     line-height: 30px;
   }
 
   .feedback__list {
-    gap: 20px;
+    margin-top: 64px;
+    gap: 17px;
+
+    &--options {
+      margin-bottom: 27px;
+      margin-top: 28px;
+      gap: 17px;
+    }
+
+    &--contacts {
+      margin-top: 75px;
+    }
+  }
+
+  .feedback__color-mark {
+    top: -4px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .feedback__field[type="radio"]:checked + .feedback__color-mark::before {
+    top: 11px;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .feedback__lable {
+    padding: 6px 42px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .feedback--border {
-    padding: 25px 27px;
-    transform: translateY(85px);
+  .feedback {
+    margin: 0;
+
+    &--border {
+      padding: 0 27px;
+      align-self: end;
+      margin-bottom: 13px;
+    }
+
+    &--user {
+      margin-top: 57px;
+    }
+
+    &--coments {
+      margin-top: 69px;
+    }
+
+    &--more {
+      margin-top: 67px;
+    }
   }
 
   .feedback__title {
     &::before {
-      width: calc(100vw - 100% - 167px);
+      width: calc(100vw - 100% - 150px);
+    }
+  }
+
+  .feedback__list {
+    gap: 18px;
+
+    &--options {
+      margin-bottom: 23px;
     }
   }
 
@@ -261,15 +388,25 @@ input[type="number"]:focus {
 
     .feedback__list {
       flex-direction: row;
-      gap: 80px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      &--contacts {
+        gap: 81px;
+      }
     }
 
     .feedback__extra {
       grid-template-columns: repeat(4, 1fr);
     }
+  }
 
-    .form-feedback__note {
-      margin: 0 0 0 80px;
-    }
+
+  .feedback__area {
+    margin-top: 77px;
+  }
+
+  .form-feedback__wrap {
+    margin-top: 23px;
   }
 }

@@ -1,6 +1,6 @@
 .footer {
   background-color: $color-bg-three;
-  padding: 40px 0;
+  padding: 22px 0;
 }
 
 .footer__nav {
@@ -30,22 +30,23 @@
 
 
 .footer__logo {
-  transition: $trans-default;
+  margin: 20px 0 16px;
+  transition: fill $trans-default, outline $trans-100;
 
   &:hover .footer__logo-img {
     fill: $color-logo-hover;
-    transition: $trans-default;
+    transition: fill $trans-default;
   }
 
   &:active .footer__logo-img {
     fill: $color-logo-active;
-    transition: $trans-default;
+    transition: fill $trans-default;
   }
 }
 
 .footer__logo:focus-visible {
   outline: 2px solid $color-outline;
-  transition: $trans-default;
+  transition: outline $trans-100;
 }
 
 .footer__list {
@@ -62,13 +63,18 @@
 .footer__item {
   &:focus-visible {
     outline: 2px solid $color-outline;
-    transition: $trans-100;
+    transition: outline $trans-100;
   }
 }
 
 .footer__link {
-  display: block;
-  transition: $trans-default;
+  display: flex;
+  transition: display $trans-default;
+
+  &:focus-visible {
+    outline: 2px solid $color-outline;
+    transition: outline $trans-100;
+  }
 }
 
 .footer__social-icon {
@@ -76,18 +82,13 @@
 
   &:hover {
     fill: $color-bg-second;
-    transition: $trans-default;
+    transition: fill $trans-default;
   }
 
   &:active {
     fill: $color-bg-second;
     opacity: 0.3;
-    transition: $trans-default;
-  }
-
-  &:focus-visible {
-    outline: 2px solid $color-outline;
-    transition: $trans-100;
+    transition: fill $trans-default, opacity $trans-default;
   }
 }
 
@@ -95,6 +96,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  margin: 20px;
 }
 
 .footer__copyright-link {
@@ -110,7 +112,7 @@
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='27' height='34' fill='none'%3e%3cg clip-path='url(%23a)'%3e%3cpath fill='%23666' d='M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='%23fff' d='M0 0h27v34H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: center right;
-  transition: $trans-default;
+  transition: opacity $trans-default, outline $trans-100;
 
   &:hover,
   &:focus {
@@ -119,17 +121,23 @@
 
   &:active {
     opacity: 0.3;
-    transition: $trans-default;
+    transition: opacity $trans-default;
   }
 
   &:focus-visible {
     outline: 2px solid $color-outline;
-    transition: $trans-100;
+    transition: outline $trans-100;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .footer {
+    padding: 40px 0;
+  }
+
   .footer__nav {
+    margin-top: 3px;
+
     &::before {
       display: none;
     }
@@ -140,15 +148,22 @@
   }
 
   .footer__logo {
-    margin-right: 27px;
+    margin-right: 35px;
   }
 
   .footer__copyright {
+    margin: 0;
     flex: 0;
   }
 
   .footer__copyright-link {
     padding-right: 23px;
-    min-width: 168px;
+    min-width: 162px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding: 51px 0;
   }
 }

@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-bottom: 20px;
 }
 
 .promo__booklet {
@@ -14,7 +13,7 @@
 .promo__title {
   display: block;
   text-align: center;
-  margin: 26px 0;
+  margin: 27px 0 25px;
   font-family: $ff-title;
   font-size: $fz-title;
   color: $color-bg-basic;
@@ -69,7 +68,9 @@
 }
 
 .promo__food-img {
+  display: block;
   text-align: center;
+  margin-bottom: 3px;
 }
 
 .promo__button {
@@ -93,6 +94,8 @@
 
   .promo__title {
     width: 416px;
+    margin-top: 65px;
+    margin-bottom: 40px;
     text-align: start;
     font-size: 60px;
     line-height: 60px;
@@ -100,6 +103,7 @@
   }
 
   .promo__text {
+    margin-bottom: 28px;
     font-size: 20px;
     line-height: 20px;
     text-align: start;
@@ -116,16 +120,22 @@
   .promo__food-img {
     width: 709px;
     height: 609px;
+    margin: 0;
   }
 
   .promo__button {
     margin-left: 90px;
     margin-top: 21px;
-    width: 244px;
-    height: 54px;
+    padding: 14px 27px;
+    width: fit-content;
     display: flex;
     align-items: center;
     order: 1;
+  }
+
+  .button {
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -136,6 +146,7 @@
     grid-template-rows: repeat(2, 1fr);
     align-items: flex-end;
     height: 694px;
+    margin-bottom: 62px;
   }
 
   .promo__cat-img-wrap {
@@ -143,7 +154,6 @@
     grid-column: 2/3;
     width: 50vw;
     height: 694px;
-    max-height: 694px;
     overflow: hidden;
     background: linear-gradient(90deg, rgba(83, 82, 87, 0.24) 0%, rgba(83, 82, 87, 0.24) 24%, #68b738 24%, #68b738 100%), linear-gradient(270deg, rgba(104, 183, 56, 0) 0%, rgba(104, 183, 56, 0) 76%, rgb(104, 183, 56) 76%, rgb(104, 183, 56) 100%);
 
@@ -162,6 +172,7 @@
 
   .promo__booklet {
     margin-left: 80px;
+    margin-top: 159px;
   }
 
   .promo__title {
@@ -183,7 +194,7 @@
     order: 0;
     z-index: 0;
     position: absolute;
-    left: 36.3%;
+    left: 36.6%;
     top: 143px;
     margin: 0;
   }
@@ -197,9 +208,7 @@
     grid-column: 1/2;
     align-self: flex-start;
     margin-left: 80px;
-    margin-top: 21px;
-    width: 244px;
-    height: 54px;
+    margin-top: 24px;
     order: 1;
   }
 }

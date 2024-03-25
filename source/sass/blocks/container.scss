@@ -6,7 +6,7 @@
   align-items: center;
   padding: 0 20px;
   justify-content: space-between;
-  gap: 40px;
+  gap: 20px;
   width: 100%;
 
   &--gap {
@@ -17,9 +17,11 @@
 @media (min-width: $tablet-width) {
   .container {
     padding: 0 30px;
+    gap: 0;
 
     &--row {
       flex-direction: row;
+      margin-top: 2px;
     }
 
     &--form {

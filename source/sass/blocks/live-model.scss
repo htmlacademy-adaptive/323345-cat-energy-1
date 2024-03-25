@@ -1,11 +1,12 @@
 .live-model {
+  margin-top: 14px;
   width: 100%;
   background-color: $color-bg-five;
 }
 
 .live-model-wrap {
   width: 100%;
-  padding: 14px 0 40px;
+  padding: 7px 0 40px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -19,7 +20,7 @@
   line-height: 40px;
   color: $color-font-title;
   font-weight: 400;
-  margin: 25px 0 20px;
+  margin: 5px 0;
 }
 
 .live-model__text {
@@ -34,7 +35,7 @@
   grid-template-areas: "weight day"
     "price price";
   justify-content: space-between;
-  margin-top: 14.5px;
+  margin-top: 1px;
 }
 
 .live-model__rates {
@@ -110,12 +111,12 @@
 
 .live-model__slider-scale {
   position: absolute;
-  left: calc(50% - 19px);
-  top: calc(50% - 19px);
+  left: calc(50% - 20px);
+  top: calc(50% - 21px);
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 4px solid $color-social;
+  border: 3px solid $color-social;
   background: url("../img/svg/dabl-arrow.svg") center center no-repeat $color-bg-basic;
   cursor: e-resize;
 
@@ -123,9 +124,9 @@
     content: "";
     position: absolute;
     left: 45%;
-    top: -110px;
+    top: -111px;
     width: 4px;
-    height: 108px;
+    height: 110px;
     border-radius: 2px;
     background: $color-social;
   }
@@ -134,9 +135,9 @@
     content: "";
     position: absolute;
     left: 45%;
-    bottom: -110px;
+    bottom: -112px;
     width: 4px;
-    height: 108px;
+    height: 112px;
     border-radius: 2px;
     background: $color-social;
   }
@@ -173,11 +174,11 @@
 
 @media (min-width: $tablet-width) {
   .live-model-wrap {
-    padding: 14px 0 40px;
+    padding: 24px 0 97px;
   }
 
   .live-model {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 56%, rgba(234, 234, 234, 1) 56%, rgba(234, 234, 234, 1) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 59.7%, rgba(234, 234, 234, 1) 59.7%, rgba(234, 234, 234, 1) 100%);
   }
 
   .live-model__title {
@@ -186,17 +187,21 @@
   }
 
   .live-model__text {
+    margin: 35px 0;
     font-size: 16px;
     line-height: 24px;
   }
 
   .live-model__rates-wrap {
     display: flex;
+    margin-top: 4px;
+    margin-bottom: 79px;
   }
 
   .live-model__rates {
     width: 162px;
     margin-right: 43px;
+    margin-top: 11px;
     gap: 11px;
   }
 
@@ -284,9 +289,12 @@
   .live-model-wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "a d"
       "b d"
       "c d";
+    gap: 30px;
+    padding: 24px 0 63px;
   }
 
   .live-model__title {
@@ -295,23 +303,29 @@
   }
 
   .live-model__text {
+    margin: 18px 0;
     width: 433px;
     grid-area: b;
-    margin: 0;
   }
 
   .live-model__rates-wrap {
     grid-area: c;
     display: grid;
-    max-width: 415px;
-    margin: 0;
+    max-width: 405px;
+    margin: 11px 0 1px;
+  }
+
+  .live-model__rates {
+    margin-right: 42px;
+    margin-top: 0;
   }
 
   .live-model__price-wrap {
+    margin-top: 46px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 333px;
+    max-width: 327px;
   }
 
   .live-model__price {
@@ -320,5 +334,7 @@
 
   .live-model__slider {
     grid-area: d;
+    margin-top: -14px;
+    margin-left: 17px;
   }
 }

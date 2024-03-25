@@ -12,12 +12,15 @@
 }
 
 .diet__options-wrap {
+  margin-bottom: 1px;
   padding: 20px 33px 18px 20px;
   position: relative;
 }
 
 .diet__title {
   padding-left: 70px;
+  margin-top: 10px;
+  margin-bottom: 9px;
   display: inline-block;
   text-align: center;
   font-family: $ff-title;
@@ -32,7 +35,7 @@
     content: "";
     position: absolute;
     left: 21px;
-    top: 38px;
+    top: 24px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -42,8 +45,8 @@
   &--slim::after {
     content: "";
     position: absolute;
-    left: 28px;
-    top: 35px;
+    left: 27px;
+    top: 20px;
     width: 36px;
     height: 50px;
     background: url("../img/svg/icon-slim-cat.svg") center left  no-repeat;
@@ -52,8 +55,8 @@
   &--pro::after {
     content: "";
     position: absolute;
-    left: 12px;
-    top: 49px;
+    left: 13px;
+    top: 35px;
     width: 67px;
     height: 28px;
     background: url("../img/svg/icon-pro-cat.svg") center left no-repeat;
@@ -62,7 +65,7 @@
 
 .diet__text {
   position: relative;
-  margin: 0 0 42px;
+  margin: 20px 0 42px;
   font-family: $ff-default;
   font-size: $fz-default;
   color: $color-font;
@@ -73,14 +76,14 @@
     position: absolute;
     bottom: -23px;
     left: 0;
-    width: 240px;
+    width: 100%;
     height: 1px;
     background-color: $color-bg-four;
   }
 }
 
 .diet__link {
-  width: fit-content;
+  max-width: max-content;
   color: $color-font-title;
   text-align: center;
   font-family: $ff-title;
@@ -88,7 +91,7 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  transition: $trans-default;
+  transition: outline $trans-100, opacity $trans-default;
 
   &:hover .diet__link-img {
     width: 26px;
@@ -96,12 +99,12 @@
 
   &:active {
     opacity: 0.3;
-    transition: $trans-default;
+    transition: opacity $trans-default;
   }
 
   &:focus-visible {
     outline: 2px solid $color-outline;
-    transition: $trans-100;
+    transition: outline $trans-100;
   }
 
   &-img {
@@ -115,16 +118,22 @@
 }
 
 @media (min-width: $tablet-width) {
+  .diet {
+    margin-bottom: 37px;
+  }
+
   .diet__options {
     width: 100%;
+    margin-bottom: 9px;
   }
 
   .diet__options-wrap {
-    padding: 53px 63px 53px 52px;
+    padding: 53px 63px 61px 52px;
   }
 
   .diet__text {
-    padding-right: 232px;
+    margin: 19px 0 56px;
+    padding-right: 249px;
     font-size: 16px;
     line-height: 24px;
 
@@ -134,6 +143,8 @@
   }
 
   .diet__title {
+    margin-top: 24px;
+    margin-bottom: 6px;
     padding-left: 0;
     font-size: 36px;
     line-height: 36px;
@@ -143,7 +154,7 @@
       height: 200px;
       left: inherit;
       right: 63px;
-      top: inherit;
+      top: 91px;
     }
 
     &--slim::after {
@@ -161,7 +172,7 @@
       background-size: cover;
       left: inherit;
       right: 29px;
-      top: 135px;
+      top: 136px;
     }
   }
 
@@ -171,21 +182,24 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  .diet__link-img {
+    margin-left: 31px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .diet {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 80px;
     padding: 20px 0;
-  }
-
-  .diet__options-wrap {
-    padding: 41px 61px 55px 52px;
+    margin-bottom: 42px;
   }
 
   .diet__text {
     padding: 0;
+    margin: 67px 0 34px;
     font-size: 16px;
     line-height: 24px;
 
@@ -202,24 +216,24 @@
     &::before {
       width: 100px;
       height: 100px;
-      left: 54px;
-      top: 38px;
+      left: 52px;
+      top: 47px;
     }
 
     &--slim::after {
       width: 70px;
       height: 97px;
       background-size: cover;
-      left: 74px;
-      top: 38px;
+      left: 67px;
+      top: 41px;
     }
 
     &--pro::after {
       width: 134px;
       height: 56px;
       background-size: cover;
-      left: 35px;
-      top: 60px;
+      left: 33px;
+      top: 67px;
     }
   }
 

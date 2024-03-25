@@ -6,22 +6,29 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  transition: $trans-100;
+  transition: outline $trans-100, background-color $trans-default;
   border: none;
 
   &:hover {
     background-color: $color-bg-button;
-    transition: $trans-default;
+    transition: background-color $trans-default;
   }
 
   &:active {
     color: rgba($color-bg-basic, 0.3);
     background-color: $color-bg-button;
-    transition: $trans-default;
+    transition: background-color $trans-default, color $trans-default;
   }
 
   &:focus-visible {
     outline: 2px solid $color-outline;
-    transition: $trans-100;
+    transition: outline $trans-100;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 26px;
   }
 }
