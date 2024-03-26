@@ -194,7 +194,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 80px;
     padding: 20px 0;
-    margin-bottom: 42px;
+    margin-bottom: 51px;
+  }
+
+  .diet__options {
+    height: 100%;
+    margin-bottom: 0;
   }
 
   .diet__text {
