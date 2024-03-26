@@ -37,7 +37,7 @@
   position: absolute;
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: calc(100% + 40px);
   background: $color-bg-second;
   top: 0;
   z-index: -1;
@@ -141,21 +141,18 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    align-items: flex-end;
-    height: 694px;
+    min-height: 694px;
     margin-bottom: 62px;
+    padding-top: 110px;
   }
 
   .promo__cat-img-wrap {
+    right: -110px;
     display: block;
-    grid-column: 2/3;
     width: 50vw;
     height: 694px;
     overflow: hidden;
-    background: linear-gradient(90deg, rgba(83, 82, 87, 0.24) 0%, rgba(83, 82, 87, 0.24) 24%, #68b738 24%, #68b738 100%), linear-gradient(270deg, rgba(104, 183, 56, 0) 0%, rgba(104, 183, 56, 0) 76%, rgb(104, 183, 56) 76%, rgb(104, 183, 56) 100%);
+    background: linear-gradient(90deg, rgba(83, 82, 87, 0.24) 0%, rgba(83, 82, 87, 0.24) 24%, #68b738 24%, #68b738 100%), linear-gradient(270deg, rgba(104, 183, 56, 0) 0%, rgba(104, 183, 56, 0) 73%, rgb(104, 183, 56) 73%, rgb(104, 183, 56) 100%);
 
     &::before,
     &::after {
@@ -172,11 +169,13 @@
 
   .promo__booklet {
     margin-left: 80px;
-    margin-top: 159px;
+    margin-top: 73px;
+    max-width: 32vw;
   }
 
   .promo__title {
-    width: 416px;
+    margin-top: 41px;
+    width: 100%;
     text-align: start;
     font-size: 60px;
     line-height: 60px;
@@ -205,7 +204,6 @@
   }
 
   .promo__button {
-    grid-column: 1/2;
     align-self: flex-start;
     margin-left: 80px;
     margin-top: 24px;

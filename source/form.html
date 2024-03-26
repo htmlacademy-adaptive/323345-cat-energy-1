@@ -11,9 +11,9 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font"  crossorigin="anonymous">
-  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" type="font/woff2" as="font"  crossorigin="anonymous">
-  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font"  crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page-body">
@@ -30,11 +30,11 @@
           <img class="header__logotype-text" src="img/svg/logotype-text-mobile.svg" width="101" height="18" alt="Cat Energy">
         </picture>
       </a>
-      <nav class="header__nav main-menu main-menu--closed main-menu--nojs">
-        <button class="main-menu__toggle" type="button">
+      <nav class="header__nav main-menu">
+        <button class="main-menu__toggle main-menu__toggle--opened" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-menu__list">
+        <ul class="main-menu__list main-menu--nojs">
           <li class=" main-menu__item">
             <a class="main-menu__link main-menu__link--current" href="./index.html">Главная</a>
           </li>
@@ -114,7 +114,7 @@
             <li class="feedback__item">
               <label class="feedback__box">
                 <span class="feedback__text">Телефон:<sup>*</sup></span>
-                <input class="feedback__field feedback__field--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" pattern="[0-9]{1} ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" required />
+                <input class="feedback__field feedback__field--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" required>
               </label>
             </li>
           </ul>
@@ -175,15 +175,17 @@
       <div class="contacts__img-wrap">
         <iframe class="contacts__img" title="Мы на карте" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1822037313746!2d30.321349354612376!3d59.93892696180316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1711047664721!5m2!1sru!2sru" width="320" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <noscript>
-          <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp">
-            <source type="image/webp" srcset="img/map-mobile.webp">
+          <div class="contacts__img-noscript-wrap">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop1x.webp 1x, img/map-desktop2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet2x.webp 2x">
+              <source type="image/webp" srcset="img/map-mobile1x.webp 1x, img/map-mobile2x.webp 2x">
 
-            <source media="(min-width: 1440px)" srcset="img/map-desktop.png">
-            <source media="(min-width: 768px)" srcset="img/map-tablet.png">
-            <img class="contacts__img-noscript" src="img/map-mobile.png" width="320" height="362" alt="Мы на карте">
-          </picture>
+              <source media="(min-width: 1440px)" srcset="img/map-desktop1x.jpg 1x, img/map-desktop2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet2x.jpg 2x">
+              <img class="contacts__img-noscript" src="img/map-mobile1x.jpg" srcset="img/map-mobile2x.jpg 2x" width="320" height="362" alt="Мы на карте">
+            </picture>
+          </div>
         </noscript>
       </div>
     </section>

@@ -38,7 +38,16 @@
 }
 
 .contacts__img-wrap {
+  position: relative;
   width: 100%;
+}
+
+.contacts__img-noscript-wrap {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: block;
+  text-align: center;
 }
 
 .contacts__img {

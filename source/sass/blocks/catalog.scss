@@ -5,7 +5,7 @@
 }
 
 .catalog__title {
-  margin: 28px 0 42px;
+  margin: 28px 0 41px;
   display: flex;
   text-align: center;
   font-family: $ff-title;
@@ -30,7 +30,7 @@
     position: absolute;
     left: -20px;
     bottom: 0;
-    width: 100vw;
+    width: calc(100vw - 20px);
     height: 1px;
     background-color: $color-border;
   }
@@ -40,7 +40,7 @@
     position: absolute;
     left: -20px;
     top: 0;
-    width: 100vw;
+    width: calc(100vw - 20px);
     height: 1px;
     background-color: $color-border;
   }
@@ -130,6 +130,10 @@
   }
 
   .catalog__button {
+    margin-top: 8px;
+  }
+
+  .catalog__button-extra {
     margin-top: 12px;
   }
 
@@ -159,7 +163,7 @@
   }
 
   .catalog__title {
-    margin-top: 74px;
+    margin-top: 75px;
   }
 
   .catalog__list {
@@ -189,6 +193,6 @@
   }
 
   .catalog__button {
-    margin-top: 18px;
+    margin-top: 15px;
   }
 }

@@ -19,7 +19,7 @@
   }
 
   &--coments {
-    margin-top: 24px;
+    margin-top: 22px;
   }
 
   &--more {
@@ -51,11 +51,12 @@
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  gap: 8px;
+  gap: 9px;
   list-style-type: none;
 
   &--options {
-    gap: 8px;
+    gap: 7px;
+    margin-top: 17px;
   }
 
   &--contacts {
@@ -93,28 +94,30 @@
   border: 2px solid $color-border-three;
 
   &--email {
-    background: url("../img/svg/icon-email.svg") center right 14px no-repeat;
+    padding-right: 35px;
+    background: url("../img/svg/icon-email.svg") center right 11px no-repeat;
 
     &:focus,
     &:valid {
-      background: url("../img/svg/icon-email-green.svg") center right 14px no-repeat;
+      background: url("../img/svg/icon-email-green.svg") center right 11px no-repeat;
     }
 
     &:not(:focus):not(:placeholder-shown):invalid {
-      background: url("../img/svg/icon-email-error.svg") center right 14px no-repeat;
+      background: url("../img/svg/icon-email-error.svg") center right 11px no-repeat;
     }
   }
 
   &--phone {
-    background: url("../img/svg/icon-phone.svg") center right 14px no-repeat;
+    padding-right: 35px;
+    background: url("../img/svg/icon-phone.svg") center right 12px no-repeat;
 
     &:focus,
     &:valid {
-      background: url("../img/svg/icon-phone-green.svg") center right 14px no-repeat;
+      background: url("../img/svg/icon-phone-green.svg") center right 12px no-repeat;
     }
 
     &:not(:focus):not(:placeholder-shown):invalid {
-      background: url("../img/svg/icon-phone-error.svg") center right 14px no-repeat;
+      background: url("../img/svg/icon-phone-error.svg") center right 12px no-repeat;
     }
   }
 
@@ -173,35 +176,32 @@
   position: relative;
   margin: 0;
   padding: 0;
-  text-align: start;
+  max-width: 58vw;
   font-family: $ff-title;
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
   color: $color-font-title;
   text-transform: none;
-  z-index: 1;
 
   &::before {
     content: "";
     position: absolute;
-    top: 59%;
+    top: 15px;
     left: calc(100% + 20px);
-    width: calc(100vw - 100% - 41px);
+    width: calc(100vw - 100% - 57px);
     height: 2px;
     background-color: $color-bg-second;
-    z-index: -1;
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 59%;
+    top: 15px;
     right: calc(100% + 40px);
     width: 100vw;
     height: 2px;
     background-color: $color-bg-second;
-    z-index: -1;
     display: none;
   }
 }
@@ -221,7 +221,7 @@ input[type="number"]:focus {
 .feedback__area {
   width: 100%;
   height: 150px;
-  padding: 14px;
+  padding: 13px 14px;
   margin-top: 39px;
   font-family: $ff-title;
   font-size: 16px;
@@ -292,16 +292,19 @@ input[type="number"]:focus {
   }
 
   .feedback__title {
+    max-width: fit-content;
     font-size: 36px;
     line-height: 36px;
 
     &::before {
+      top: 22px;
       left: calc(100% + 40px);
-      width: calc(100vw - 100% - 110px);
+      width: calc(100vw - 100% - 127px);
     }
 
     &::after {
       display: block;
+      top: 22px;
     }
   }
 
@@ -344,6 +347,13 @@ input[type="number"]:focus {
   .feedback__lable {
     padding: 6px 42px;
   }
+
+  .feedback__field {
+    &--phone,
+    &--email {
+      padding-right: 37px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -371,7 +381,7 @@ input[type="number"]:focus {
 
   .feedback__title {
     &::before {
-      width: calc(100vw - 100% - 150px);
+      width: calc(100vw - 100% - 167px);
     }
   }
 
