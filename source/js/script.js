@@ -1,7 +1,7 @@
 const navMain = document.querySelector('.main-menu__list');
 const navToggle = document.querySelector('.main-menu__toggle');
 
-navMain.classList.remove('main-nav--nojs');
+navMain.classList.remove('main-menu__list--nojs');
 navMain.classList.add('main-menu--closed');
 navToggle.classList.remove('main-menu__toggle--opened');
 navToggle.classList.add('main-menu__toggle--closed');
