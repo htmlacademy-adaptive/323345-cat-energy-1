@@ -36,13 +36,13 @@
         </button>
         <ul class="main-menu__list main-menu__list--nojs">
           <li class=" main-menu__item">
-            <a class="main-menu__link main-menu__link--current" href="./index.html">Главная</a>
+            <a class="main-menu__link" href="./index.html">Главная</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="./catalog.html">Каталог продукции</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="./form.html">Подбор программы</a>
+            <a class="main-menu__link main-menu__link--current" href="./form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -51,60 +51,65 @@
 
   <main class="form">
     <div class="container container--form">
-      <h1 class="visually-hidden">Обратная связь</h1>
-      <form class="form-feedback">
-        <fieldset class="feedback">
-          <legend class="feedback__title-form">Подбор программы</legend>
-          <p class="feedback__subtitle">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
-          <ul class="feedback__list">
-            <li class="feedback__item">
-              <label class="feedback__box">
-                <span class="feedback__text">ИМЯ:<sup>*</sup></span>
-                <input class="feedback__field" type="text" placeholder="Барсик" required>
-              </label>
-            </li>
-            <li class="feedback__item">
-              <label class="feedback__box">
-                <span class="feedback__text">ВЕС (КГ):<sup>*</sup></span>
-                <input class="feedback__field" type="number" step="0.1" min="1" placeholder="7" required>
-              </label>
-            </li>
-            <li class="feedback__item">
-              <label class="feedback__box">
-                <span class="feedback__text">ВОЗРАСТ&nbsp;(ЛЕТ):</span>
-                <input class="feedback__field" type="number" step="0.1" min="1" placeholder="7" required>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="feedback feedback--border">
-          <legend class="visually-hidden">Вид питания</legend>
-          <ul class="feedback__list feedback__list--options">
-            <li class="feedback__item">
-              <label class="feedback__lable">
-                <input class="feedback__field visually-hidden" type="radio" value="slim" name="rations" checked>
-                <span class="feedback__color-mark"></span>
-                <span class="feedback__control-lable">Похудение</span>
-              </label>
-            </li>
-            <li class="feedback__item">
-              <label class="feedback__lable">
-                <input class="feedback__field visually-hidden" type="radio" value="pro" name="rations">
-                <span class="feedback__color-mark"></span>
-                <span class="feedback__control-lable">Набор массы</span>
-              </label>
-            </li>
-            <li class="feedback__item">
-              <label class="feedback__lable">
-                <input class="feedback__field visually-hidden" type="radio" value="help" name="rations">
-                <span class="feedback__color-mark"></span>
-                <span class="feedback__control-lable">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="feedback feedback--user feedback--fullscreen">
-          <legend class="feedback__title">Контактные данные (владельца кота)</legend>
+      <h1 class="form__title">Подбор программы</h1>
+      <p class="form__subtitle">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
+    </div>
+    <form class="form-feedback" action="http://echo.htmlacademy.ru">
+      <div class="container container--form">
+        <div class="form-feedback__pet">
+          <fieldset class="feedback">
+            <ul class="feedback__list">
+              <li class="feedback__item">
+                <label class="feedback__box">
+                  <span class="feedback__text">ИМЯ:<sup>*</sup></span>
+                  <input class="feedback__field" type="text" placeholder="Барсик" required>
+                </label>
+              </li>
+              <li class="feedback__item">
+                <label class="feedback__box">
+                  <span class="feedback__text">ВЕС (КГ):<sup>*</sup></span>
+                  <input class="feedback__field" type="number" step="0.1" min="1" placeholder="7" required>
+                </label>
+              </li>
+              <li class="feedback__item">
+                <label class="feedback__box">
+                  <span class="feedback__text">ВОЗРАСТ&nbsp;(ЛЕТ):</span>
+                  <input class="feedback__field" type="number" step="0.1" min="1" placeholder="7" required>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="feedback feedback--border">
+            <h2 class="visually-hidden">Вид питания</h2>
+            <ul class="feedback__list feedback__list--options">
+              <li class="feedback__item">
+                <label class="feedback__lable">
+                  <input class="feedback__field visually-hidden" type="radio" value="slim" name="rations" checked>
+                  <span class="feedback__color-mark"></span>
+                  <span class="feedback__control-lable">Похудение</span>
+                </label>
+              </li>
+              <li class="feedback__item">
+                <label class="feedback__lable">
+                  <input class="feedback__field visually-hidden" type="radio" value="pro" name="rations">
+                  <span class="feedback__color-mark"></span>
+                  <span class="feedback__control-lable">Набор массы</span>
+                </label>
+              </li>
+              <li class="feedback__item">
+                <label class="feedback__lable">
+                  <input class="feedback__field visually-hidden" type="radio" value="help" name="rations">
+                  <span class="feedback__color-mark"></span>
+                  <span class="feedback__control-lable">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+      </div>
+      <fieldset class="feedback feedback--decor feedback--user feedback--fullscreen">
+        <div class="container container--form">
+          <h2 class="feedback__title">Контактные данные (владельца кота)</h2>
           <ul class="feedback__list feedback__list--contacts">
             <li class="feedback__item">
               <label class="feedback__box">
@@ -119,13 +124,17 @@
               </label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="feedback feedback--coments feedback--fullscreen">
-          <legend class="feedback__title">Комментарий</legend>
+        </div>
+      </fieldset>
+      <fieldset class="feedback feedback--decor feedback--coments feedback--fullscreen">
+        <div class="container container--form">
+          <h2 class="feedback__title">Комментарий</h2>
           <textarea class="feedback__area" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
-        <fieldset class="feedback feedback--more feedback--fullscreen">
-          <legend class="feedback__title">Дополнительно</legend>
+        </div>
+      </fieldset>
+      <fieldset class="feedback feedback--decor feedback--more feedback--fullscreen">
+        <div class="container container--form">
+          <h2 class="feedback__title">Дополнительно</h2>
           <ul class="feedback__extra extra">
             <li class="extra__item">
               <label class="extra__lable">
@@ -156,13 +165,16 @@
               </label>
             </li>
           </ul>
-        </fieldset>
+        </div>
+      </fieldset>
+      <div class="container container--form">
         <div class="form-feedback__wrap">
           <button class="form-feedback__button">Отправить заявку</button>
           <p class="form-feedback__note"><sup>*</sup> - Обязательные поля</p>
         </div>
-      </form>
-    </div>
+      </div>
+    </form>
+
     <section class="contacts">
       <div class="container container--gap">
         <div class="contacts__wrap">
@@ -198,6 +210,7 @@
         <svg class="footer__logo-img" width="128" height="24">
           <use xlink:href="img/svg/sprite.svg#footer-logo"></use>
         </svg>
+        <span class="visually-hidden">Логотип Car Energy.</span>
       </a>
       <nav class="footer__nav">
         <ul class="footer__list">

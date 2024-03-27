@@ -106,8 +106,9 @@
     outline: 2px solid $color-outline;
     transition: outline $trans-100;
   }
+}
 
-  &-img {
+  .diet__link-img {
     width: 18px;
     height: 12px;
     margin-left: 15px;
@@ -115,7 +116,6 @@
     transition: width 1s ease;
     overflow: visible;
   }
-}
 
 @media (min-width: $tablet-width) {
   .diet {

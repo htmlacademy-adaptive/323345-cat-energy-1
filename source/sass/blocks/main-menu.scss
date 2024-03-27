@@ -1,6 +1,8 @@
 // Навигационное меню в шапке сайта (бургер меню)
 .main-menu__toggle {
-  position: relative;
+  position: absolute;
+  right: 20px;
+  top: 20px;
   width: 25px;
   height: 25px;
   padding: 0;
@@ -84,7 +86,11 @@
 }
 
 .main-menu__list--nojs {
+  position: relative;
+  left: -20px;
+  top: 15px;
   display: flex;
+  width: calc(100% + 40px);
 }
 
 .main-menu--closed {
