@@ -108,14 +108,14 @@
   }
 }
 
-  .diet__link-img {
-    width: 18px;
-    height: 12px;
-    margin-left: 15px;
-    padding-right: 6px;
-    transition: width 1s ease;
-    overflow: visible;
-  }
+.diet__link-img {
+  width: 18px;
+  height: 12px;
+  margin-left: 15px;
+  padding-right: 6px;
+  transition: width 1s ease;
+  overflow: visible;
+}
 
 @media (min-width: $tablet-width) {
   .diet {
