@@ -82,7 +82,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog__cards {
-    margin-bottom: 64px;
+    margin-bottom: 70px;
   }
 
   .catalog__title {
@@ -157,9 +157,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    margin-top: 113px;
+  }
+
   .catalog__cards {
     margin-top: 54px;
-    margin-bottom: 71px;
+    margin-bottom: 77px;
   }
 
   .catalog__title {

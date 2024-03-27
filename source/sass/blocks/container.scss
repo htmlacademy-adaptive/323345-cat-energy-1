@@ -12,10 +12,20 @@
   &--gap {
     gap: 0;
   }
+
+  &--catalog {
+    display: block;
+  }
+
+  &--form {
+    display: block;
+    padding: 0 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .container {
+    max-width: calc($desktop-width - 1px);
     padding: 0 30px;
     gap: 0;
 
@@ -32,6 +42,11 @@
 
 @media (min-width: $desktop-width) {
   .container {
+    max-width: $desktop-width;
     padding: 0 110px;
+
+    &--form {
+      display: block;
+    }
   }
 }

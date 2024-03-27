@@ -39,53 +39,53 @@
 @media (min-width: $tablet-width) {
   .gift {
     padding: 0;
+  }
 
-    &__img-wrap {
-      width: 707px;
-      height: 200px;
-    }
+  .gift__img-wrap {
+    width: 707px;
+    height: 200px;
+  }
 
-    &__img {
-      width: fit-content;
-    }
+  .gift__img {
+    width: fit-content;
+  }
 
-    &__icon {
-      top: 57px;
-      left: 77px;
-    }
+  .gift__icon {
+    top: 57px;
+    left: 77px;
+  }
 
-    &__text {
-      bottom: 69px;
-      left: auto;
-      right: 125px;
-      text-align: left;
-    }
+  .gift__text {
+    bottom: 69px;
+    left: auto;
+    right: 125px;
+    text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
   .gift {
     padding: 0;
+  }
 
-    &__img-wrap {
-      width: 245px;
-      height: 288px;
-    }
+  .gift__img-wrap {
+    width: 245px;
+    height: 288px;
+  }
 
-    &__img {
-      width: 245px;
-      height: 288px;
-    }
+  .gift__img {
+    width: 245px;
+    height: 288px;
+  }
 
-    &__icon {
-      top: 56px;
-      left: 85px;
-    }
+  .gift__icon {
+    top: 56px;
+    left: 85px;
+  }
 
-    &__text {
-      bottom: 44px;
-      left: 43px;
-      text-align: center;
-    }
+  .gift__text {
+    bottom: 44px;
+    left: 43px;
+    text-align: center;
   }
 }

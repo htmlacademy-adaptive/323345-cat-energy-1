@@ -178,7 +178,7 @@
   }
 
   .live-model {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 59.7%, rgba(234, 234, 234, 1) 59.7%, rgba(234, 234, 234, 1) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 57.2%, rgba(234, 234, 234, 1) 57.2%, rgba(234, 234, 234, 1) 100%);
   }
 
   .live-model__title {
@@ -215,7 +215,7 @@
       background: url("../img/svg/weight-back-large.svg") no-repeat;
     }
 
-    &-modify::before {
+    &--modify::before {
       content: "";
       position: absolute;
       width: 162px;
@@ -283,7 +283,7 @@
 
 @media (min-width: $desktop-width) {
   .live-model {
-    background: linear-gradient(180deg, $color-bg-basic 0%, $color-bg-basic 25%, $color-bg-three 25%, $color-bg-three 100%);
+    background: linear-gradient(180deg, $color-bg-basic 0%, $color-bg-basic 27%, $color-bg-three 27%, $color-bg-three 100%);
   }
 
   .live-model-wrap {

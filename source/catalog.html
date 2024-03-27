@@ -36,10 +36,10 @@
         </button>
         <ul class="main-menu__list main-menu__list--nojs">
           <li class=" main-menu__item">
-            <a class="main-menu__link main-menu__link--current" href="./index.html">Главная</a>
+            <a class="main-menu__link" href="./index.html">Главная</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="./catalog.html">Каталог продукции</a>
+            <a class="main-menu__link main-menu__link--current" href="./catalog.html">Каталог продукции</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="./form.html">Подбор программы</a>
@@ -50,8 +50,8 @@
   </header>
 
   <main class="catalog">
-    <div class="container">
-      <section class="catalog__cards">
+    <section class="catalog__cards">
+      <div class="container container--catalog">
         <h1 class="catalog__title">Каталог продукции</h1>
         <ul class="catalog__list">
           <li class="catalog__item">
@@ -274,8 +274,10 @@
             </div>
           </li>
         </ul>
-      </section>
-      <section class="extra-product">
+      </div>
+    </section>
+    <section class="extra-product">
+      <div class="container container--catalog">
         <h2 class="extra-product__title">Дополнительные товары</h2>
         <div class="extra-product__wrap">
           <ul class="extra-product__list">
@@ -347,8 +349,8 @@
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
     <section class="contacts">
       <div class="container container--gap">
         <div class="contacts__wrap">
@@ -384,6 +386,7 @@
         <svg class="footer__logo-img" width="128" height="24">
           <use xlink:href="img/svg/sprite.svg#footer-logo"></use>
         </svg>
+        <span class="visually-hidden">Логотип Car Energy.</span>
       </a>
       <nav class="footer__nav">
         <ul class="footer__list">
